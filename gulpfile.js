@@ -20,17 +20,16 @@ const bourbon2     = require('bourbon'); // Подключаем библиот�
 
 // sass to css
 gulp.task("sass", function(){
-  return gulp.src("src/sass/**/*.+(scss|sass)")
-    .pipe(sass({
-			includePaths: bourbon.includePaths
-		})
-		 // .on('error', sass.logError)) //перехватываем ошибки
-		)
-		.pipe(autoprefixer({browsers: ['last 10 versions'], cascade: false}))
-    .pipe(gulp.dest("src/css")) //нельзя писать файл. Нужно только папки
-    .pipe(browserSync.reload({
-			stream: true
-		}));
+	return gulp.src("src/sass/**/*.+(scss|sass)")
+		 .pipe(sass({
+			 includePaths: bourbon.includePaths
+		 })
+		 .on('error', sass.logError)) //перехватываем ошибки
+		 .pipe(autoprefixer({browsers: ['last 10 versions'], cascade: false}))
+		 .pipe(gulp.dest("src/css")) //нельзя писать файл. Нужно только папки
+		 .pipe(browserSync.reload({
+			 stream: true
+		 }));
 });
 
 // reload browser
@@ -65,10 +64,11 @@ gulp.task("minJsLibs", function(){
 	del.sync("src/js/libs.min.js"); // удаляем старую сборку
 	return gulp.src([
 				'src/libs/jquery/dist/jquery.min.js',
-				'src/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
 				'src/libs/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+				'src/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+				'src/libs/owl-carousel/owl-carousel/owl.carousel.min.js',
 				'src/libs/Headhesive.js/dist/headhesive.min.js',
-				'src/libs/owl-carousel/owl-carousel/owl.carousel.min.js'
+				'src/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js'
 	])
 			.pipe(concat("libs.min.js")) // собираем все библиотеки в один файл
 			.pipe(uglify()) // сжимаем
@@ -79,11 +79,11 @@ gulp.task("minJsLibs", function(){
 gulp.task("minCssLibs", ['sass'], function(){
 	return gulp.src([
 		'src/css/libs.css',
-		'src/libs/owl-carousel/owl-carousel/owl.carousel.css',
-		'src/libs/owl-carousel/owl-carousel/owl.theme.css',
-		'src/libs/owl-carousel/owl-carousel/owl.transitions.css',
-		'src/libs/magnific-popup/dist/magnific-popup.css',
-		'src/libs/wow/css/animate.css'
+		// 'src/libs/owl-carousel/owl-carousel/owl.carousel.css',
+		// 'src/libs/owl-carousel/owl-carousel/owl.theme.css',
+		// 'src/libs/owl-carousel/owl-carousel/owl.transitions.css',
+		'src/libs/magnific-popup/dist/magnific-popup.css'
+		// 'src/libs/wow/css/animate.css'
 	])
 			.pipe(cssnano()) // сжимаем
 			.pipe(rename({
@@ -114,7 +114,7 @@ gulp.task("build", ['remove', 'img', 'sass', 'minJsLibs'], function(){
 			.pipe(gulp.dest("dist/js"));
 
 	var buildHtml = gulp.src("src/*.html")
-			.pipe(gulp.dest("dist/"));
+			.pipe(gulp.dest("dist/")); 
 });
 
 //default gulp task call watch
