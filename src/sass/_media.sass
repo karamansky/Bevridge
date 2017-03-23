@@ -55,6 +55,9 @@
 
 
 @media screen and (max-width: 1024px)
+	.header__menu .menu li
+		margin-right: 16px
+
 	.slider__item .main-img img
 		width: 80%
 
@@ -68,6 +71,16 @@
 
 	.news .news__item
 		width: 29%
+
+	.header .caption__text
+		width: calc(50% - 120px)
+		padding: 44px 60px
+
+	#brands .types ul li
+		margin-right: 25px
+
+	#brands .brands a
+		margin-right: 5px
 
 
 @media screen and (max-width: 992px)
@@ -149,11 +162,28 @@
 	.footer .social
 		display: block
 
+	.header .caption__img img
+		height: 100%
 
-
-
-
-
+	#brands .types
+		text-align: center
+		ul
+			display: inline-block
+		li a
+			font-size: 30px
+	#brands .brands
+		overflow: hidden
+		.row
+			width: 33%
+			float: left
+			text-align: center
+	#brands .brands a
+		display: inline-block
+		overflow: hidden
+		margin: 30px
+		text-align: center
+		&:last-child
+			margin: 30px
 
 @media screen and (max-width: 768px)
 	.header
@@ -232,7 +262,7 @@
 
 @media screen and (max-width: 350px) //iPhone5
 	.phone-navigation
-		height: auto
+		height: 100%
 
 	.history__content .content__item
 		margin-top: 0

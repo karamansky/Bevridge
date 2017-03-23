@@ -6,6 +6,7 @@
 	max-width: 1186px
 	margin: 0 auto
 
+/***************************** INDEX *********************/
 
 #nav-icon1
 	display: none
@@ -96,7 +97,7 @@
 .header__nav
 	box-shadow: 0 5px 6px rgba(0,0,0,0.2)
 	background: #fff
-	overflow: hidden
+
 
 .header__logo
 	width: 188px
@@ -337,12 +338,6 @@
 			padding: 0 13px 0 13px
 			margin-left: 3px
 			float: left
-			//&:after
-			//	display: block
-			//	content: ""
-			//	height: 13px
-			//	width: 100%
-			//	background: $red
 			img
 				max-width: 90px
 				text-align: center
@@ -399,7 +394,7 @@
 			left: -16px
 			width: 28px
 			height: 46px
-			background: url("../images/icons/arrow_left.png")
+			background: url("../images/icons/arrow_left.png") no-repeat
 			cursor: pointer
 		.right-btn
 			position: absolute
@@ -409,7 +404,7 @@
 			right: -21px
 			width: 28px
 			height: 46px
-			background: url("../images/icons/arrow_right.png")
+			background: url("../images/icons/arrow_right.png") no-repeat
 			cursor: pointer
 			
 	.slider__map
@@ -467,7 +462,6 @@
 #news
 	background: #D1242A url("../images/index_news_bg.jpg") bottom center no-repeat
 	background-size: 100%
-	//height: 700px
 	margin-top: -90px
 	padding: 203px 0 50px 0
 	h2
@@ -487,7 +481,6 @@
 			top: 58px
 			
 .news
-
 	.news__item
 		padding: 0 18px
 		width: 29.595%
@@ -545,6 +538,8 @@
 #footer
 	background: #000
 	padding: 48px 0 50px 0
+	z-index: 2
+	position: relative
 
 .footer
 	position: relative
@@ -583,6 +578,96 @@
 				margin-right: 0
 
 /*end footer*/
+
+/************************* BRANDS *********************/
+.header
+	h2
+		margin-top: 57px
+		text-align: center
+		color: #fff
+		position: relative
+		margin-bottom: 76px
+		&:after
+			position: absolute
+			left: 50%
+			margin-left: -108px
+			content: ""
+			display: block
+			width: 226px
+			height: 6px
+			background: $black
+			top: 58px
+
+	.header__caption
+		overflow: hidden
+		height: 250px
+
+	.caption__img
+		width: 50%
+		float: left
+
+	.caption__text
+		height: 100%
+		width: calc(50% - 180px)
+		color: #fff
+		float: left
+		background: $yellow
+		padding: 44px 90px
+		p
+			letter-spacing: -1px
+			font-family: $archer-semibold
+			font-size: 33px
+			line-height: 38px
+			max-width: 396px
+
+
+#brands
+	margin-top: -60px
+	position: relative
+	background-image: url("../images/brands_bg_top.jpg"), url("../images/brands_bg_bottom.jpg")
+	background-position: top center, bottom center
+	background-color: #fff
+	background-size: 100%
+	padding-bottom: 53px
+
+	.types
+		position: relative
+		top: -42px
+		background: $yellow
+		width: calc(100% - 80px)
+		padding: 35px 40px
+		margin-bottom: 50px
+		ul
+			overflow: hidden
+			li
+				float: left
+				font-size: 35px
+				line-height: 35px
+				margin-right: 63px
+				font-family: $archer-bold
+				&:last-child
+					margin-right: 0
+		a
+			color: #fff
+			text-transform: uppercase
+			&:hover
+				color: $black
+
+	.brands
+		a
+			display: inline-block
+			margin-right: 47px
+			vertical-align: middle
+			&:last-child
+				margin-right: 0
+			img
+				max-width: 200px
+				float: left
+		.row
+			margin-bottom: 110px
+			&:last-child
+				margin-bottom: 0
+
 
 //
 //
