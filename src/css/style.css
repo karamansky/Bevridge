@@ -127,7 +127,7 @@ li {
     min-width: 320px;
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px; }
+    padding: 50px 20px 20px 20px; }
   .phone-navigation li a {
     display: block;
     margin: 3px 0;
@@ -425,7 +425,7 @@ li {
 /*our market */
 #ourmarket {
   background: #31508f url("../images/index_ourmarket_bg.jpg") top center no-repeat;
-  background-size: 100%;
+  background-size: cover;
   margin-left: auto;
   margin-right: auto;
   padding: 93px 0 190px 0; }
@@ -650,7 +650,13 @@ li {
   .history__item {
     margin-right: 9%; }
   .history__item .image-cap:after {
-    display: none; } }
+    display: none; }
+  .news .news__item {
+    width: 29.1%; }
+  .footer .logo {
+    left: 20px; }
+  .footer .social {
+    right: 20px; } }
 
 @media screen and (max-width: 1024px) {
   .slider__item .main-img img {
@@ -660,7 +666,9 @@ li {
   #ourmarket .slider__info h4 {
     font-size: 22px; }
   #ourmarket .slider__info p {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .news .news__item {
+    width: 29%; } }
 
 @media screen and (max-width: 992px) {
   #nav-icon1 {
@@ -706,7 +714,19 @@ li {
   .image-cap {
     margin-bottom: 0; }
   #ourmarket {
-    background-size: cover; } }
+    background-size: cover; }
+  .news .news__item {
+    width: 27.5%; }
+  .footer .logo {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin: 0 auto 30px auto;
+    width: 170px; }
+  .footer .navigation {
+    padding-left: 0; }
+  .footer .social {
+    display: block; } }
 
 @media screen and (max-width: 768px) {
   .header {
@@ -734,7 +754,22 @@ li {
   #ourmarket .slider .left-btn {
     z-index: 5; }
   #ourmarket .slider .right-btn {
-    z-index: 5; } }
+    z-index: 5; }
+  .news .news__item {
+    width: -webkit-calc(100% - 40px);
+    width: calc(100% - 40px);
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 35px; }
+  .footer .navigation li {
+    float: none;
+    margin: 0 0 30px 0;
+    width: 100%; }
+    .footer .navigation li a {
+      font-size: 30px; }
+  .footer .social {
+    bottom: -20px;
+    top: auto; } }
 
 @media screen and (max-width: 450px) {
   .phone-hidden {
@@ -748,10 +783,13 @@ li {
       padding: 0; }
   .history__item {
     width: auto;
-    margin-right: 20px; }
+    margin-right: 10px;
+    margin-left: 10px; }
     .history__item .image-cap {
       width: 100px;
-      height: 100px; } }
+      height: 100px; }
+  .news .readall {
+    width: 100%; } }
 
 @media screen and (max-width: 350px) {
   .phone-navigation {

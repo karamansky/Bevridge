@@ -43,6 +43,15 @@
 	.history__item .image-cap:after
 		display: none
 
+	.news .news__item
+		width: 29.1%
+
+	.footer .logo
+		left: 20px
+
+	.footer .social
+		right: 20px
+
 
 
 @media screen and (max-width: 1024px)
@@ -56,6 +65,9 @@
 
 	#ourmarket .slider__info p
 		font-size: 20px
+
+	.news .news__item
+		width: 29%
 
 
 @media screen and (max-width: 992px)
@@ -121,7 +133,21 @@
 	#ourmarket
 		background-size: cover
 
+	.news .news__item
+		width: 27.5%
 
+	.footer .logo
+		position: relative
+		left: auto
+		top: auto
+		margin: 0 auto 30px auto
+		width: 170px
+
+	.footer .navigation
+		padding-left: 0
+
+	.footer .social
+		display: block
 
 
 
@@ -164,8 +190,22 @@
 	#ourmarket .slider .right-btn
 		z-index: 5
 
+	.news .news__item
+		width: calc(100% - 40px)
+		margin-right: 0
+		margin-left: 0
+		margin-bottom: 35px
 
+	.footer .navigation li
+		float: none
+		margin: 0 0 30px 0
+		width: 100%
+		a
+			font-size: 30px
 
+	.footer .social
+		bottom: -20px
+		top: auto
 
 @media screen and (max-width: 450px) //iPhone6
 	.phone-hidden
@@ -181,10 +221,14 @@
 
 	.history__item
 		width: auto
-		margin-right: 20px
+		margin-right: 10px
+		margin-left: 10px
 		.image-cap
 			width: 100px
 			height: 100px
+
+	.news .readall
+		width: 100%
 
 @media screen and (max-width: 350px) //iPhone5
 	.phone-navigation
