@@ -86,6 +86,14 @@
 			color: #fff
 			border-color: #fff
 
+/*nav*/
+.nav
+	position: relative
+	z-index: 1
+	margin-bottom: -120px
+
+
+
 /*header*/
 .header-wrapper
 	background: #CF212A
@@ -143,7 +151,7 @@
 
 
 .header__slider
-	padding-top: 71px
+	padding-top: 191px
 
 .slider__items
 	position: relative
@@ -492,6 +500,8 @@
 	.news__img
 		text-align: center
 		margin-bottom: 39px
+		max-height: 175px
+		overflow: hidden
 
 	.news__text
 		text-align: center
@@ -582,7 +592,7 @@
 /************************* BRANDS *********************/
 .header
 	h2
-		margin-top: 57px
+		padding-top: 177px
 		text-align: center
 		color: #fff
 		position: relative
@@ -596,7 +606,7 @@
 			width: 226px
 			height: 6px
 			background: $black
-			top: 58px
+			bottom: -25px
 
 	.header__caption
 		overflow: hidden
@@ -668,6 +678,110 @@
 			&:last-child
 				margin-bottom: 0
 
+
+
+/*********************************NEWS******************************/
+#newsandmedia
+	padding: 203px 0 50px 0
+	background-image: url("../images/news_bg_top.jpg"), url("../images/news_bg_bottom.jpg")
+	background-position: top center, bottom center
+	background-repeat: no-repeat, no-repeat
+	background-color: #D1242A
+	background-size: 100%
+
+	h2
+		text-align: center
+		color: #fff
+		position: relative
+		margin-bottom: 73px
+		margin-top: -23px
+		&:after
+			position: absolute
+			left: 50%
+			margin-left: -108px
+			content: ""
+			display: block
+			width: 226px
+			height: 6px
+			background: $black
+			bottom: -25px
+
+	.filter
+		margin-left: -16px
+		margin-bottom: 78px
+		ul
+			overflow: hidden
+			li
+				float: left
+				margin-right: 10px
+
+		a
+			display: inline-block
+			font-family: $bebas-bold
+			font-size: 25px
+			text-align: center
+			line-height: 40px
+			padding: 1px 20px 0 20px
+			color: #fff
+			&:hover
+				background: $black
+
+		a.active
+			background: $black
+
+	.news .news__img
+		margin-bottom: 29px
+
+	.news .news__text
+		margin-bottom: 20px
+
+	.row
+		margin-bottom: 37px
+
+	.readall
+		margin-top: 110px
+		margin-bottom: 55px
+
+	.video-preview
+		position: relative
+
+	.video-play
+		position: absolute
+		display: block
+		left: 50%
+		margin-left: -82px
+		width: 190px
+		height: 190px
+		cursor: pointer
+		background: url("../images/icons/play_video.png") center no-repeat
+
+	.news__open
+		overflow: hidden
+		margin-bottom: 104px
+		
+	.news__open-text
+		float: left
+		max-width: calc(50% - 10px)
+
+		h1
+			font-family: $archer-bold
+			color: #fff
+			text-transform: none
+			padding-bottom: 37px
+		p
+			padding-left: 3px
+			margin-bottom: 25px
+			font-family: $archer-semibold
+			font-size: 23px
+			line-height: 25px
+			color: #fff
+
+	.news__open-img
+		width: 50%
+		float: right
+		padding-top: 70px
+		img
+			float: right
 
 //
 //
