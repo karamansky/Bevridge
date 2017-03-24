@@ -37,6 +37,29 @@ $(function(){
 		});
 
 
+		/**
+		 * news and media filter
+		 */
+		$("#newsandmedia .filter a").click(function(){
+
+			$("#newsandmedia .filter a").removeClass("active");
+			$(this).addClass("active");
+
+			var target = $(this).data("target");
+
+			if(target == "all"){
+				console.log("123");
+				$("#newsandmedia .news__item").show();
+			}else{
+				$("#newsandmedia .news .news__item").hide();
+				$("#newsandmedia .news .news__item." + target).show();
+			}
+
+
+
+		});
+
+
 
 
 //==========EoF==============
