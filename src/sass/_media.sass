@@ -172,8 +172,8 @@
 
 	.footer .logo
 		position: relative
-		left: auto
-		top: auto
+		left: auto!important
+		top: auto!important
 		margin: 0 auto 30px auto
 		width: 170px
 
@@ -215,6 +215,14 @@
 				a
 					font-size: 25px
 					padding: 25px 10px
+
+	.header .caption__text
+		padding: 44px 40px
+		width: calc(50% - 80px)
+
+	#whatwedo .whatwedo__caption .caption__text
+		padding: 44px 40px
+		width: calc(50% - 80px)
 
 @media screen and (max-width: 768px)
 	.header
@@ -272,6 +280,12 @@
 		width: calc(50% - 40px)
 		padding: 20px 20px
 
+	#whatwedo .whatwedo__caption .caption__text
+		width: calc(50% - 40px)
+		padding: 20px 20px
+		p
+			font-size: 28px
+
 	#brands .brands .row
 		width: 100%
 
@@ -325,13 +339,16 @@
 		font-size: 25px
 
 @media screen and (max-width: 600px)
-	.header .caption__text
+	.header .caption__text,
+	#whatwedo .whatwedo__caption .caption__text
 		width: 100%
+		height: auto
 		p
 			font-size: 38px
 			max-width: 95%
 
-	.header .caption__img
+	.header .caption__img,
+	#whatwedo .caption__img
 		display: none
 
 	#beer-popup .body__carousel-wrapper
@@ -362,6 +379,18 @@
 	#beer-popup .beer-popup__body
 		min-height: auto
 		overflow: hidden
+
+	.aboutus_page .coverage p
+		font-size: 25px
+		line-height: 55px
+
+	#whatwedo .content,
+	.aboutus_page .content
+		margin-top: 50px
+
+	#whatwedo .whatwedo__caption,
+	.header .header__caption
+		height: auto
 
 @media screen and (max-width: 450px) //iPhone6
 	.phone-hidden
@@ -395,6 +424,18 @@
 	#beer-popup .body__info
 		padding: 25px
 		width: calc(100% - 50px)
+		
+	.aboutus_page .coverage p
+		background: none!important
+
+	.aboutus_page .coverage
+		margin-left: 0
+
+	.aboutus_page .coverage p.coverage__item1,
+	.aboutus_page .coverage p.coverage__item2,
+	.aboutus_page .coverage p.coverage__item3,
+	.aboutus_page .coverage p.coverage__item4
+		padding: 10px
 
 @media screen and (max-width: 350px) //iPhone5
 	.phone-navigation

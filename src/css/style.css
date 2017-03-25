@@ -1011,6 +1011,10 @@ li {
   background: #CF212A url("../images/about_us_bg.jpg") top center no-repeat;
   background-size: cover; }
 
+#ourmarket.aboutus_page {
+  padding-bottom: 250px;
+  margin-bottom: -50px; }
+
 .UppercaseAndUnderline {
   text-transform: uppercase;
   padding-bottom: 2px;
@@ -1251,8 +1255,8 @@ li {
     width: 27.5%; }
   .footer .logo {
     position: relative;
-    left: auto;
-    top: auto;
+    left: auto !important;
+    top: auto !important;
     margin: 0 auto 30px auto;
     width: 170px; }
   .footer .navigation {
@@ -1288,7 +1292,15 @@ li {
         font-size: 20px; }
         #brands .types ul li a {
           font-size: 25px;
-          padding: 25px 10px; } }
+          padding: 25px 10px; }
+  .header .caption__text {
+    padding: 44px 40px;
+    width: -webkit-calc(50% - 80px);
+    width: calc(50% - 80px); }
+  #whatwedo .whatwedo__caption .caption__text {
+    padding: 44px 40px;
+    width: -webkit-calc(50% - 80px);
+    width: calc(50% - 80px); } }
 
 @media screen and (max-width: 768px) {
   .header {
@@ -1336,6 +1348,12 @@ li {
     width: -webkit-calc(50% - 40px);
     width: calc(50% - 40px);
     padding: 20px 20px; }
+  #whatwedo .whatwedo__caption .caption__text {
+    width: -webkit-calc(50% - 40px);
+    width: calc(50% - 40px);
+    padding: 20px 20px; }
+    #whatwedo .whatwedo__caption .caption__text p {
+      font-size: 28px; }
   #brands .brands .row {
     width: 100%; }
   #newsandmedia .news__open-img {
@@ -1384,12 +1402,16 @@ li {
     font-size: 25px; } }
 
 @media screen and (max-width: 600px) {
-  .header .caption__text {
-    width: 100%; }
-    .header .caption__text p {
+  .header .caption__text,
+  #whatwedo .whatwedo__caption .caption__text {
+    width: 100%;
+    height: auto; }
+    .header .caption__text p,
+    #whatwedo .whatwedo__caption .caption__text p {
       font-size: 38px;
       max-width: 95%; }
-  .header .caption__img {
+  .header .caption__img,
+  #whatwedo .caption__img {
     display: none; }
   #beer-popup .body__carousel-wrapper {
     width: 100%; }
@@ -1415,7 +1437,16 @@ li {
     display: block; }
   #beer-popup .beer-popup__body {
     min-height: auto;
-    overflow: hidden; } }
+    overflow: hidden; }
+  .aboutus_page .coverage p {
+    font-size: 25px;
+    line-height: 55px; }
+  #whatwedo .content,
+  .aboutus_page .content {
+    margin-top: 50px; }
+  #whatwedo .whatwedo__caption,
+  .header .header__caption {
+    height: auto; } }
 
 @media screen and (max-width: 450px) {
   .phone-hidden {
@@ -1443,7 +1474,16 @@ li {
   #beer-popup .body__info {
     padding: 25px;
     width: -webkit-calc(100% - 50px);
-    width: calc(100% - 50px); } }
+    width: calc(100% - 50px); }
+  .aboutus_page .coverage p {
+    background: none !important; }
+  .aboutus_page .coverage {
+    margin-left: 0; }
+  .aboutus_page .coverage p.coverage__item1,
+  .aboutus_page .coverage p.coverage__item2,
+  .aboutus_page .coverage p.coverage__item3,
+  .aboutus_page .coverage p.coverage__item4 {
+    padding: 10px; } }
 
 @media screen and (max-width: 350px) {
   .phone-navigation {
