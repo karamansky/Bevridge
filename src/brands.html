@@ -111,43 +111,85 @@
   <div class="container">
     <div class="types ">
       <ul>
-        <li><a href="#">Beers</a></li>
+        <li><a href="#" class="active">Beers</a></li>
         <li><a href="#">Craft Beer</a></li>
         <li><a href="#">cider</a></li>
         <li><a href="#">coolers</a></li>
         <li><a href="#">malt</a></li>
-        <li><a href="#">Water</a></li>
+        <li><a href="#" >Water</a></li>
       </ul>
     </div>
 
     <div class="brands unskew">
 
       <div class="row">
-        <a href="#"><img src="images/brand_coors.png" alt=""></a>
-        <a href="#"><img src="images/brand_coorslight.png" alt=""></a>
-        <a href="#"><img src="images/brand_carlsberg.png" srcset="images/brand_carlsberg@2x.png 2x" alt=""></a>
-        <a href="#"><img src="images/brand_somersby.png" alt=""></a>
-        <a href="#"><img src="images/brand_bluemoon.png" alt=""></a>
-        <a href="#"><img src="images/brand_duvel.png" alt=""></a>
+        <a href="#beer-popup" class="popup"><img src="images/brand_coors.png" alt=""></a>
+        <a href="#beer-popup" class="popup"><img src="images/brand_coorslight.png" alt=""></a>
+        <a href="#beer-popup" class="popup"><img src="images/brand_carlsberg.png" alt=""></a>
+        <a href="#beer-popup" class="popup"><img src="images/brand_somersby.png" alt=""></a>
+        <a href="#beer-popup" class="popup"><img src="images/brand_bluemoon.png" alt=""></a>
+        <a href="#beer-popup" class="popup"><img src="images/brand_duvel.png" alt=""></a>
       </div>
       <div class="row">
-        <a href="#"><img src="images/brand_maredsous.png" alt=""></a>
-        <a href="#"><img src="images/brand_chouffe.png" alt=""></a>
-        <a href="#"><img src="images/brand_magichat.png" alt=""></a>
-        <a href="#"><img src="images/brand_abita.png" alt=""></a>
-        <a href="#"><img src="images/brand_anchor.png" alt=""></a>
-        <a href="#"><img src="images/brand_liefmans.png" alt=""></a>
+        <a href="#beer-popup" class="popup"><img src="images/brand_maredsous.png" alt=""></a>
+        <a href="#beer-popup" class="popup"><img src="images/brand_chouffe.png" alt=""></a>
+        <a href="#beer-popup" class="popup"><img src="images/brand_magichat.png" alt=""></a>
+        <a href="#beer-popup" class="popup"><img src="images/brand_abita.png" alt=""></a>
+        <a href="#beer-popup" class="popup"><img src="images/brand_anchor.png" alt=""></a>
+        <a href="#beer-popup" class="popup"><img src="images/brand_liefmans.png" alt=""></a>
       </div>
       <div class="row">
-        <a href="#"><img src="images/brand_seagram.png" alt=""></a>
-        <a href="#"><img src="images/brand_malt.png" alt=""></a>
-        <a href="#"><img src="images/brand_minimalt.png" alt=""></a>
-        <a href="#"><img src="images/brand_s.png" alt=""></a>
+        <a href="#beer-popup" class="popup"><img src="images/brand_seagram.png" alt=""></a>
+        <a href="#beer-popup" class="popup"><img src="images/brand_malt.png" alt=""></a>
+        <a href="#beer-popup" class="popup"><img src="images/brand_minimalt.png" alt=""></a>
+        <a href="#beer-popup" class="popup"><img src="images/brand_s.png" alt=""></a>
       </div>
     </div>
 
   </div>
 </section>
+
+
+<div id="beer-popup" class="mfp-hide">
+  <div class="overlay">
+    <div class="beer-popup__body">
+      <div class="body__carousel-wrapper" style="background-image: url('images/coors_img1.png');">
+        <div class="carousel-overlay">
+          <div class="body__carousel">
+            <img src="images/coors_img1.png" alt="" />
+            <img src="images/coors_img1.png" alt="" />
+          </div>
+          <h5>bottle 330 ml</h5>
+          <a href="#" class="btn buynow">buy now!</a>
+        </div>
+      </div>
+      <div class="body__info">
+        <a href="#" class="close-popup">
+          <img src="images/icons/popup_close.png" srcser="images/icons/popup_close@2x.png 2x" alt=""/>
+        </a>
+        <h2 class="skew">
+          BEER
+        </h2>
+        <img src="images/coors_img_big.jpg" alt="" />
+        <h3>COORS  1873</h3>
+        <h4>THE LEGENDARY BEER SINCE 1873</h4>
+        <p>
+          Coors 1873,nicknamed the “Banquet Beer,” was ﬁrst introduced by Adolph Coors in 1873. According to legend, thirsty miners in the late 1800s threw celebratory banquets with Coors as the honorary beer because of its superior craftsmanship. Prior to its nationwide distribution in 1981, Coors built a cult following, with presidents, movie stars and many others making special trips out west to buy it. Coors 1873 is brewed in the Rockies for a uniquely crisp, clean and drinkable taste.
+        </p>
+        <ul>
+          <li>
+            <span>Brewer</span>&nbsp;<p>Coors Brewing Co.</p>
+          </li>
+          <li><span>Origin</span>&nbsp;<p>Colorado, USA</p></li>
+          <li><span>Style</span>&nbsp;<p>American Light Lager</p></li>
+          <li><span>Strength</span>&nbsp;<p>4.2%</p></li>
+          <li><span>Availability</span>&nbsp;<p>24x335ml.</p></li>
+          <li><span>Web</span>&nbsp;<p>www.coors.com</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -182,10 +224,12 @@
 </footer>
 
 
+
+
 <!-- styles -->
-  <!--<link rel="stylesheet" href="css/magnific-popup.min.css">-->
-  <!--<link rel="stylesheet" href="css/owl.carousel.min.css">-->
-  <!--<link rel="stylesheet" href="css/owl.theme.min.css">-->
+  <link rel="stylesheet" href="css/magnific-popup.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.min.css">
 
 <!-- scripts -->
   <script src="js/libs.min.js"></script>

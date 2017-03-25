@@ -66,9 +66,9 @@ gulp.task("minJsLibs", function(){
 				'src/libs/jquery/dist/jquery.min.js',
 				'src/libs/bootstrap-sass/assets/javascripts/bootstrap.min.js',
 				'src/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
-				'src/libs/owl-carousel/owl-carousel/owl.carousel.min.js',
-				'src/libs/Headhesive.js/dist/headhesive.min.js',
-				'src/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js'
+				'src/libs/owl-carousel/owl-carousel/owl.carousel.min.js'
+				// 'src/libs/Headhesive.js/dist/headhesive.min.js',
+				// 'src/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js'
 	])
 			.pipe(concat("libs.min.js")) // собираем все библиотеки в один файл
 			.pipe(uglify()) // сжимаем

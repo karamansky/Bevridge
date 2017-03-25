@@ -23,7 +23,8 @@ input:focus, textarea:focus {
   outline: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "Archer-Bold", sans-serif; }
 
 h1 {
   font-size: 45px;
@@ -31,8 +32,7 @@ h1 {
 
 h2 {
   font-size: 39px;
-  line-height: 40px;
-  font-family: "Archer-Bold", sans-serif; }
+  line-height: 40px; }
 
 h3 {
   font-size: 30px;
@@ -684,9 +684,6 @@ li {
     position: relative;
     top: -42px;
     background: #ff7f01;
-    width: -webkit-calc(100% - 80px);
-    width: calc(100% - 80px);
-    padding: 35px 40px;
     margin-bottom: 50px; }
     #brands .types ul {
       overflow: hidden; }
@@ -694,15 +691,18 @@ li {
         float: left;
         font-size: 35px;
         line-height: 35px;
-        margin-right: 63px;
         font-family: "Archer-Bold", sans-serif; }
         #brands .types ul li:last-child {
           margin-right: 0; }
     #brands .types a {
+      display: block;
+      padding: 35px 33px;
       color: #fff;
       text-transform: uppercase; }
       #brands .types a:hover {
-        color: #000000; }
+        background: #31508F; }
+      #brands .types a.active {
+        background: #31508F; }
   #brands .brands a {
     display: inline-block;
     margin-right: 47px;
@@ -716,6 +716,140 @@ li {
     margin-bottom: 110px; }
     #brands .brands .row:last-child {
       margin-bottom: 0; }
+
+#beer-popup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 999; }
+  #beer-popup .beer-popup__body {
+    background: #fff;
+    max-width: 1030px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 758px;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  #beer-popup h2 {
+    padding: 30px 130px;
+    background: #ff7f01;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: -60px;
+    left: 37.09%; }
+  #beer-popup h5 {
+    font-family: "BebasNeue-Bold", sans-serif;
+    font-size: 25px;
+    line-height: 25px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: -25px;
+    height: 25px; }
+  #beer-popup a.close-popup {
+    position: absolute;
+    right: 23px;
+    top: 15px; }
+  #beer-popup a.buynow {
+    display: inline-block;
+    text-align: center;
+    padding: 0 60px;
+    font-size: 35px;
+    line-height: 79px;
+    height: 79px;
+    color: #fff;
+    font-family: "Archer-Bold", sans-serif;
+    background: #d10f26;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin: -5px auto 0 auto; }
+  #beer-popup .body__carousel-wrapper {
+    width: 37.08%;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 140%;
+    background-position: center center;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  #beer-popup .carousel-overlay {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8); }
+  #beer-popup .body__carousel {
+    text-align: center;
+    padding-top: 75px;
+    width: 100%; }
+  #beer-popup .owl-pagination {
+    display: none; }
+  #beer-popup .owl-prev {
+    background: url("../images/icons/popup_carousel_arrow_left.png") center no-repeat;
+    height: 38px;
+    width: 22px;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: -webkit-calc(50% + 10px);
+    top: calc(50% + 10px); }
+  #beer-popup .owl-next {
+    background: url("../images/icons/popup_carousel_arrow_right.png") center no-repeat;
+    height: 38px;
+    width: 22px;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: -webkit-calc(50% + 10px);
+    top: calc(50% + 10px); }
+  #beer-popup .body__info {
+    width: 62.913%;
+    float: left;
+    padding: 65px; }
+    #beer-popup .body__info img {
+      display: block;
+      margin: 5px auto 40px auto;
+      max-height: 115px; }
+    #beer-popup .body__info h3 {
+      font-family: "BebasNeue-Bold", sans-serif;
+      text-transform: uppercase;
+      font-size: 40px;
+      line-height: 45px; }
+    #beer-popup .body__info h4 {
+      font-family: "BebasNeue-Bold", sans-serif;
+      text-transform: uppercase;
+      color: #cdcdcd;
+      font-size: 34px;
+      line-height: 34px;
+      margin-bottom: 30px; }
+    #beer-popup .body__info p {
+      font-family: "Archer-Book", sans-serif;
+      font-size: 20px;
+      line-height: 22px; }
+    #beer-popup .body__info ul {
+      margin-top: 35px; }
+      #beer-popup .body__info ul li span {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 18px;
+        color: #d10f26;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold; }
+      #beer-popup .body__info ul li p {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 18px; }
 
 /*********************************NEWS******************************/
 #newsandmedia {
