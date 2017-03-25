@@ -77,6 +77,10 @@ $(function(){
 		 */
 		$(".body__carousel").owlCarousel({
 			items				: 1,
+			itemsDesktop 			: [1920,1],
+			itemsDesktopSmall	: [1199,1],
+			itemsTablet				: [789,1],
+			itemsMobile 			: [450,1],
 			navigation	:	true,
 			navigationText			: ["",""]
 		});

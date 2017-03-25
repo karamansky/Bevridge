@@ -55,6 +55,16 @@
 	#newsandmedia .filter
 		margin-left: 15px
 
+	#brands .types
+		text-align: center
+		ul
+			display: inline-block
+			li
+				font-size: 25px
+		a
+			font-size: 25px
+			padding: 25px 20px
+
 
 
 @media screen and (max-width: 1024px)
@@ -80,9 +90,6 @@
 		padding: 44px 60px
 		p
 			font-size: 28px
-
-	#brands .types ul li
-		margin-right: 25px
 
 	#brands .brands a
 		margin-right: 5px
@@ -199,6 +206,16 @@
 		&:last-child
 			margin: 30px
 
+	#brands .types
+		text-align: center
+		ul
+			display: inline-block
+			li
+				font-size: 20px
+				a
+					font-size: 25px
+					padding: 25px 10px
+
 @media screen and (max-width: 768px)
 	.header
 		padding-bottom: 100px
@@ -255,11 +272,6 @@
 		width: calc(50% - 40px)
 		padding: 20px 20px
 
-	#brands .types
-		top: 0
-		li a
-			line-height: 70px
-
 	#brands .brands .row
 		width: 100%
 
@@ -295,6 +307,23 @@
 		h1, p
 			padding: 5px 15px
 
+	#brands .types
+		transform: skewY(3.7deg)
+		text-align: center
+		margin-top: 90px
+		ul
+			display: inline-block
+			li
+				float: none
+				font-size: 20px
+				width: 100%
+				a
+					font-size: 25px
+					padding: 10px 10px
+
+	#beer-popup a.buynow
+		font-size: 25px
+
 @media screen and (max-width: 600px)
 	.header .caption__text
 		width: 100%
@@ -305,6 +334,34 @@
 	.header .caption__img
 		display: none
 
+	#beer-popup .body__carousel-wrapper
+		width: 100%
+
+	#beer-popup h2
+		left: 0
+		top: 0
+		padding: 25px 35px
+		transform: skewY(0deg)
+		z-index: 0
+
+	#beer-popup .body__info
+		width: calc(100% - 130px)
+
+	#beer-popup a.buynow
+		margin: 15px auto 0 auto
+		display: block
+
+	#beer-popup .body__info img
+		margin-left: 0
+
+	#beer-popup .beer-popup__body,
+	#beer-popup .body__carousel-wrapper,
+	#beer-popup .carousel-overlay
+		display: block
+
+	#beer-popup .beer-popup__body
+		min-height: auto
+		overflow: hidden
 
 @media screen and (max-width: 450px) //iPhone6
 	.phone-hidden
@@ -334,6 +391,10 @@
 
 	#csr .csr__open-text p
 		text-align: justify
+
+	#beer-popup .body__info
+		padding: 25px
+		width: calc(100% - 50px)
 
 @media screen and (max-width: 350px) //iPhone5
 	.phone-navigation
