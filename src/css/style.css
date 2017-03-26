@@ -442,7 +442,7 @@ li {
     text-align: center;
     color: #fff;
     position: relative;
-    margin-bottom: 98px; }
+    margin-bottom: 28px; }
     #ourmarket h2:after {
       position: absolute;
       left: 50%;
@@ -453,14 +453,20 @@ li {
       height: 6px;
       background: #082662;
       top: 58px; }
+  #ourmarket .owl-pagination {
+    display: none; }
   #ourmarket .slider {
-    position: relative; }
+    position: relative;
+    max-width: 1222px;
+    margin: 0 auto;
+    /*.owl-prev*/
+    /*.owl-next*/ }
     #ourmarket .slider .left-btn {
       position: absolute;
       display: block;
-      top: 50%;
-      margin-top: -7px;
-      left: -16px;
+      top: -webkit-calc(50% + 9px);
+      top: calc(50% + 9px);
+      left: 0px;
       width: 28px;
       height: 46px;
       background: url("../images/icons/arrow_left.png") no-repeat;
@@ -468,13 +474,18 @@ li {
     #ourmarket .slider .right-btn {
       position: absolute;
       display: block;
-      top: 50%;
-      margin-top: -7px;
-      right: -21px;
+      top: -webkit-calc(50% + 9px);
+      top: calc(50% + 9px);
+      right: 0px;
       width: 28px;
       height: 46px;
       background: url("../images/icons/arrow_right.png") no-repeat;
       cursor: pointer; }
+  #ourmarket .slider__items {
+    max-width: 1186px;
+    margin: 0 auto; }
+  #ourmarket .slider__item {
+    padding-top: 70px; }
   #ourmarket .slider__map {
     float: left;
     width: 50%;
@@ -514,9 +525,12 @@ li {
       #ourmarket .slider__info .tr .td {
         vertical-align: top;
         display: table-cell;
-        padding-bottom: 15px; }
+        padding-bottom: 19px; }
         #ourmarket .slider__info .tr .td:last-child {
           padding-left: 25px; }
+    #ourmarket .slider__info .icon {
+      width: 44px;
+      height: 41px; }
 
 /*end our market */
 /* news */
@@ -1012,8 +1026,8 @@ li {
   background-size: cover; }
 
 #ourmarket.aboutus_page {
-  padding-bottom: 250px;
-  margin-bottom: -50px; }
+  padding-bottom: 220px;
+  margin-bottom: -65px; }
 
 .UppercaseAndUnderline {
   text-transform: uppercase;

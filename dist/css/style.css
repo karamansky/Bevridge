@@ -657,8 +657,12 @@ li {
   height: 250px; }
 
 .header .caption__img {
+  height: 100%;
   width: 50%;
   float: left; }
+  .header .caption__img img {
+    height: 100%;
+    width: 100%; }
 
 .header .caption__text {
   height: 100%;
@@ -1001,6 +1005,130 @@ li {
   #csr .news .news__text {
     margin-bottom: 20px; }
 
+/********************************** ABOUT US ***************************/
+.aboutus_page .header {
+  padding-bottom: 70px;
+  background: #CF212A url("../images/about_us_bg.jpg") top center no-repeat;
+  background-size: cover; }
+
+#ourmarket.aboutus_page {
+  padding-bottom: 265px;
+  margin-bottom: -65px; }
+
+.UppercaseAndUnderline {
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #fff; }
+
+.aboutus_page .content {
+  margin-top: 122px; }
+  .aboutus_page .content p {
+    padding-left: 5px;
+    color: #fff;
+    font-size: 23px;
+    line-height: 28px;
+    font-family: "Archer-Bold", sans-serif;
+    margin-bottom: 26px; }
+
+.aboutus_page .coverage {
+  text-align: center;
+  margin-top: 43px;
+  margin-bottom: 110px;
+  margin-left: -50px; }
+  .aboutus_page .coverage p {
+    font-size: 32px;
+    line-height: 65px;
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Archer-Bold", sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+    display: inline-block; }
+    .aboutus_page .coverage p.coverage__item1 {
+      padding: 0 84px;
+      background: url("../images/icons/coverage_icon1.png") right no-repeat; }
+    .aboutus_page .coverage p.coverage__item2 {
+      padding: 0 84px;
+      background: url("../images/icons/coverage_icon2.png") left no-repeat; }
+    .aboutus_page .coverage p.coverage__item3 {
+      padding: 0 84px;
+      background: url("../images/icons/coverage_icon3.png") right no-repeat; }
+    .aboutus_page .coverage p.coverage__item4 {
+      padding: 0 84px;
+      background: url("../images/icons/coverage_icon4.png") left no-repeat; }
+
+#whatwedo {
+  background: #CF212A url("../images/what_we_do_bg.jpg") top center no-repeat;
+  background-size: cover;
+  margin-top: -60px;
+  padding-bottom: 70px; }
+  #whatwedo h2 {
+    padding-top: 120px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin-bottom: 76px; }
+    #whatwedo h2:after {
+      position: absolute;
+      left: 50%;
+      margin-left: -108px;
+      content: "";
+      display: block;
+      width: 226px;
+      height: 6px;
+      background: #d10f26;
+      bottom: -25px; }
+  #whatwedo .whatwedo__caption {
+    overflow: hidden;
+    height: 250px; }
+  #whatwedo .caption__img {
+    height: 100%;
+    width: 50%;
+    float: left; }
+    #whatwedo .caption__img img {
+      height: 100%;
+      width: 100%; }
+  #whatwedo .caption__text {
+    height: 100%;
+    width: -webkit-calc(50% - 180px);
+    width: calc(50% - 180px);
+    color: #fff;
+    float: left;
+    background: #d10f26;
+    padding: 44px 90px; }
+    #whatwedo .caption__text p {
+      letter-spacing: -1px;
+      font-family: "Archer-Semibold-Pro", sans-serif;
+      font-size: 33px;
+      line-height: 38px;
+      max-width: 396px; }
+  #whatwedo .content {
+    margin-top: 122px; }
+    #whatwedo .content p {
+      padding-left: 5px;
+      color: #fff;
+      font-size: 23px;
+      line-height: 28px;
+      font-family: "Archer-Bold", sans-serif;
+      margin-bottom: 26px; }
+  #whatwedo .coverage {
+    text-align: center;
+    margin-top: 43px; }
+    #whatwedo .coverage p {
+      font-size: 32px;
+      line-height: 65px;
+      position: relative;
+      text-transform: uppercase;
+      color: #fff;
+      font-family: "Archer-Bold", sans-serif;
+      text-align: center;
+      margin-bottom: 0;
+      display: inline-block; }
+      #whatwedo .coverage p span {
+        text-transform: none;
+        font-family: "Archer-Book", sans-serif; }
+
 @media screen and (max-width: 1280px) {
   .slider__item .action-button img {
     right: -13px; }
@@ -1127,8 +1255,8 @@ li {
     width: 27.5%; }
   .footer .logo {
     position: relative;
-    left: auto;
-    top: auto;
+    left: auto !important;
+    top: auto !important;
     margin: 0 auto 30px auto;
     width: 170px; }
   .footer .navigation {
@@ -1164,7 +1292,15 @@ li {
         font-size: 20px; }
         #brands .types ul li a {
           font-size: 25px;
-          padding: 25px 10px; } }
+          padding: 25px 10px; }
+  .header .caption__text {
+    padding: 44px 40px;
+    width: -webkit-calc(50% - 80px);
+    width: calc(50% - 80px); }
+  #whatwedo .whatwedo__caption .caption__text {
+    padding: 44px 40px;
+    width: -webkit-calc(50% - 80px);
+    width: calc(50% - 80px); } }
 
 @media screen and (max-width: 768px) {
   .header {
@@ -1212,6 +1348,12 @@ li {
     width: -webkit-calc(50% - 40px);
     width: calc(50% - 40px);
     padding: 20px 20px; }
+  #whatwedo .whatwedo__caption .caption__text {
+    width: -webkit-calc(50% - 40px);
+    width: calc(50% - 40px);
+    padding: 20px 20px; }
+    #whatwedo .whatwedo__caption .caption__text p {
+      font-size: 28px; }
   #brands .brands .row {
     width: 100%; }
   #newsandmedia .news__open-img {
@@ -1260,12 +1402,16 @@ li {
     font-size: 25px; } }
 
 @media screen and (max-width: 600px) {
-  .header .caption__text {
-    width: 100%; }
-    .header .caption__text p {
+  .header .caption__text,
+  #whatwedo .whatwedo__caption .caption__text {
+    width: 100%;
+    height: auto; }
+    .header .caption__text p,
+    #whatwedo .whatwedo__caption .caption__text p {
       font-size: 38px;
       max-width: 95%; }
-  .header .caption__img {
+  .header .caption__img,
+  #whatwedo .caption__img {
     display: none; }
   #beer-popup .body__carousel-wrapper {
     width: 100%; }
@@ -1291,7 +1437,16 @@ li {
     display: block; }
   #beer-popup .beer-popup__body {
     min-height: auto;
-    overflow: hidden; } }
+    overflow: hidden; }
+  .aboutus_page .coverage p {
+    font-size: 25px;
+    line-height: 55px; }
+  #whatwedo .content,
+  .aboutus_page .content {
+    margin-top: 50px; }
+  #whatwedo .whatwedo__caption,
+  .header .header__caption {
+    height: auto; } }
 
 @media screen and (max-width: 450px) {
   .phone-hidden {
@@ -1319,7 +1474,16 @@ li {
   #beer-popup .body__info {
     padding: 25px;
     width: -webkit-calc(100% - 50px);
-    width: calc(100% - 50px); } }
+    width: calc(100% - 50px); }
+  .aboutus_page .coverage p {
+    background: none !important; }
+  .aboutus_page .coverage {
+    margin-left: 0; }
+  .aboutus_page .coverage p.coverage__item1,
+  .aboutus_page .coverage p.coverage__item2,
+  .aboutus_page .coverage p.coverage__item3,
+  .aboutus_page .coverage p.coverage__item4 {
+    padding: 10px; } }
 
 @media screen and (max-width: 350px) {
   .phone-navigation {

@@ -382,7 +382,7 @@
 		text-align: center
 		color: #fff
 		position: relative
-		margin-bottom: 98px
+		margin-bottom: 28px
 		&:after
 			position: absolute
 			left: 50%
@@ -394,30 +394,48 @@
 			background: $dark-blue
 			top: 58px
 
+	.owl-pagination
+		display: none
+
 	.slider
 		position: relative
+		max-width: 1222px
+		margin: 0 auto
 
+		//.owl-controls.clickable
+			//overflow: hidden
+			//transform: skewY(3.7deg)
+
+		/*.owl-prev*/
 		.left-btn
 			position: absolute
 			display: block
-			top: 50%
-			margin-top: -7px
-			left: -16px
+			top: calc(50% + 9px)
+			left: 0px
 			width: 28px
 			height: 46px
 			background: url("../images/icons/arrow_left.png") no-repeat
 			cursor: pointer
+
+
+		/*.owl-next*/
 		.right-btn
 			position: absolute
 			display: block
-			top: 50%
-			margin-top: -7px
-			right: -21px
+			top: calc(50% + 9px)
+			right: 0px
 			width: 28px
 			height: 46px
 			background: url("../images/icons/arrow_right.png") no-repeat
 			cursor: pointer
-			
+
+	.slider__items
+		max-width: 1186px
+		margin: 0 auto
+
+	.slider__item
+		padding-top: 70px
+
 	.slider__map
 		float: left
 		width: 50%
@@ -461,9 +479,14 @@
 			.td
 				vertical-align: top
 				display: table-cell
-				padding-bottom: 15px
+				padding-bottom: 19px
 				&:last-child
 					padding-left: 25px
+
+		.icon
+			width: 44px
+			height: 41px
+
 /*end our market */
 
 
@@ -1004,10 +1027,8 @@
 	background-size: cover
 
 #ourmarket.aboutus_page
-	padding-bottom: 250px
-	margin-bottom: -50px
-
-
+	padding-bottom: 220px
+	margin-bottom: -65px
 
 .UppercaseAndUnderline
 	text-transform: uppercase
