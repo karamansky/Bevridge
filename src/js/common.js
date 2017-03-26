@@ -84,7 +84,25 @@ $(function(){
 			navigation	:	true,
 			navigationText			: ["",""]
 		});
+		var owl_c = $("#ourmarket .slider__items").owlCarousel({
+			items				: 1,
+			itemsDesktop 			: [1920,1],
+			itemsDesktopSmall	: [1199,1],
+			itemsTablet				: [789,1],
+			itemsMobile 			: [450,1],
+			navigation	:	true
+		});
 
+		$('#ourmarket .right-btn').click(function(e) {
+			e.preventDefault();
+			// owl.trigger('next.owl.carousel');
+			owl_c.trigger('owl.next');
+		});
+		$('#ourmarket .left-btn').click(function(e) {
+			e.preventDefault();
+			// owl.trigger('prev.owl.carousel');
+			owl_c.trigger('owl.prev');
+		});
 
 
 

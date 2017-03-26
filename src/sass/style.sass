@@ -48,6 +48,7 @@
 	width: 100%
 	height: 100%
 	z-index: 100
+	overflow: scroll!important
 	.soc
 		display: inline-block
 	ul
@@ -382,7 +383,7 @@
 		text-align: center
 		color: #fff
 		position: relative
-		margin-bottom: 98px
+		margin-bottom: 28px
 		&:after
 			position: absolute
 			left: 50%
@@ -394,30 +395,46 @@
 			background: $dark-blue
 			top: 58px
 
+	.owl-pagination,
+	.owl-buttons
+		display: none
+
 	.slider
 		position: relative
+		max-width: 1222px
+		margin: 0 auto
 
+
+		/*.owl-prev*/
 		.left-btn
 			position: absolute
 			display: block
-			top: 50%
-			margin-top: -7px
-			left: -16px
+			top: calc(50% + 9px)
+			left: 0px
 			width: 28px
 			height: 46px
 			background: url("../images/icons/arrow_left.png") no-repeat
 			cursor: pointer
+
+
+		/*.owl-next*/
 		.right-btn
 			position: absolute
 			display: block
-			top: 50%
-			margin-top: -7px
-			right: -21px
+			top: calc(50% + 9px)
+			right: 0px
 			width: 28px
 			height: 46px
 			background: url("../images/icons/arrow_right.png") no-repeat
 			cursor: pointer
-			
+
+	.slider__items
+		max-width: 1186px
+		margin: 0 auto
+
+	.slider__item
+		padding-top: 70px
+
 	.slider__map
 		float: left
 		width: 50%
@@ -461,9 +478,14 @@
 			.td
 				vertical-align: top
 				display: table-cell
-				padding-bottom: 15px
+				padding-bottom: 19px
 				&:last-child
 					padding-left: 25px
+
+		.icon
+			width: 44px
+			height: 41px
+
 /*end our market */
 
 
@@ -567,6 +589,8 @@
 	.navigation
 		padding-left: 60px
 		display: inline-block
+		position: relative
+		z-index: 2
 
 		ul
 			overflow: hidden
@@ -1004,15 +1028,9 @@
 	background-size: cover
 
 #ourmarket.aboutus_page
-	padding-bottom: 250px
-	margin-bottom: -50px
+	padding-bottom: 220px
+	margin-bottom: -65px
 
-
-
-.UppercaseAndUnderline
-	text-transform: uppercase
-	padding-bottom: 2px
-	border-bottom: 1px solid #fff
 
 .aboutus_page
 
@@ -1057,8 +1075,8 @@
 
 
 #whatwedo
-	background: #CF212A url("../images/what_we_do_bg.jpg") top center no-repeat
-	background-size: cover
+	background: #3B3B39 url("../images/what_we_do_bg.jpg") top center no-repeat
+	background-size: 100%
 	margin-top: -60px
 	padding-bottom: 70px
 
@@ -1133,6 +1151,226 @@
 				text-transform: none
 				font-family: $archer-book
 
+/*********************************** CAPABILITIES *****************************/
+.capabilities_page .header
+	padding-bottom: 70px
+	background: #D1242A url("../images/capabilities_header_bg.jpg") top center no-repeat
+	background-size: 100%
+
+.capabilities_page
+	padding-bottom: 30px
+	.content
+		margin-top: 106px
+
+		p
+			padding-left: 5px
+			color: #fff
+			font-size: 23px
+			line-height: 26px
+			font-family: $archer-bold
+			margin-bottom: 26px
+
+		h1
+			text-transform: none
+
+		h2
+			text-transform: none
+			padding-top: 24px
+			&:after
+				display: none
+
+		h4
+			font-size: 30px
+			padding-top: 15px
+			color: #fff
+
+	.coverage
+		text-align: center
+		margin-top: 35px
+		p
+			font-size: 30px
+			line-height: 50px
+			position: relative
+			text-transform: uppercase
+			color: #fff
+			font-family: $archer-book
+			text-align: center
+			margin-bottom: 0
+			display: inline-block
+			span
+				text-transform: none
+				font-family: $archer-book
+
+#whatweprovide
+	background: #3B3B39 url("../images/what_we_do_bg.jpg") top center no-repeat
+	background-size: 100%
+	margin-top: -60px
+	padding-bottom: 80px
+
+	h2
+		padding-top: 120px
+		text-align: center
+		color: #fff
+		position: relative
+		margin-bottom: 76px
+		&:after
+			position: absolute
+			left: 50%
+			margin-left: -108px
+			content: ""
+			display: block
+			width: 226px
+			height: 6px
+			background: $red
+			bottom: -25px
+
+	.whatweprovide__caption
+		overflow: hidden
+		height: 250px
+
+	.caption__img
+		width: 50%
+		float: left
+		img
+			height: 100%
+			width: 100%
+
+
+	.content
+		margin-top: 76px
+
+		h2
+			padding: 0
+			margin: 0
+			&:after
+				display: none
+
+
+		h3
+			font-size: 45px
+			line-height: 45px
+			text-transform: none
+			color: #fff
+			padding: 26px 0
+
+		h4
+			font-size: 30px
+			line-height: 40px
+			text-transform: none
+			color: #fff
+			font-family: $archer-book
+
+		p
+			padding-left: 5px
+			color: #fff
+			font-size: 23px
+			line-height: 28px
+			font-family: $archer-bold
+			margin-bottom: 26px
+
+		ul
+			margin-top: 30px
+			margin-bottom: 30px
+			p
+				font-family: $archer-book
+				font-size: 27px
+				line-height: 30px
+				margin-bottom: 8px
+
+
+
+#wheregoing
+	background: #2D4A82 url("../images/capabilities_blue_bg.jpg") top center no-repeat
+	background-size: 100%
+	padding-bottom: 145px
+	margin-bottom: -70px
+
+	h2
+		padding-top: 120px
+		text-align: center
+		color: #fff
+		position: relative
+		margin-bottom: 76px
+		&:after
+			position: absolute
+			left: 50%
+			margin-left: -108px
+			content: ""
+			display: block
+			width: 226px
+			height: 6px
+			background: $red
+			bottom: -25px
+
+	.wheregoing__caption
+		overflow: hidden
+		height: 250px
+
+	.caption__img
+		width: 50%
+		float: left
+		img
+			height: 100%
+			width: 100%
+
+	.content
+		margin-top: 76px
+		font-family: $archer-bold
+		color: #fff
+
+		.img-box
+			max-height: 250px
+			overflow: hidden
+			text-align: center
+			margin: 85px 0
+
+		h2
+			padding: 0
+			margin: 0
+			&:after
+				display: none
+
+
+		h3
+			font-size: 45px
+			line-height: 45px
+			text-transform: none
+			color: #fff
+			padding: 26px 0
+
+		h4
+			font-size: 30px
+			line-height: 40px
+			text-transform: none
+			color: #fff
+			font-family: $archer-book
+
+		p
+			padding-left: 5px
+			color: #fff
+			font-size: 23px
+			line-height: 28px
+			font-family: $archer-bold
+			margin-bottom: 26px
+
+		p.head
+			margin-top: -10px
+			font-size: 35px
+			line-height: 45px
+			text-align: center
+
+		a
+			color: #fff
+			text-decoration: underline
+
+		ul
+			margin-top: 30px
+			margin-bottom: 30px
+			p
+				font-family: $archer-book
+				font-size: 27px
+				line-height: 30px
+				margin-bottom: 8px
 //
 //
 //
