@@ -22,7 +22,7 @@
   <!-- main stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
-  <title>BevRidge | Store-page</title>
+  <title>BevRidge | Store-by-brand-page</title>
 
 </head>
 <body>
@@ -85,6 +85,59 @@
 
 
 <section id="store">
+
+  <div class="cart">
+    <div class="container">
+      <div class="cart-wrapper">
+        <div class="cart__body">
+          <div class="cart__table">
+            <div class="table">
+              <div class="tr">
+                <div class="th">Product</div>
+                <div class="th">Qty</div>
+                <div class="th">Price</div>
+              </div>
+              <div class="tr">
+                <div class="td">
+                  <div class="img-box">
+                    <img src="images/goods/11.png" alt=""/>
+                  </div>
+                  <div class="info-block">
+                    <h3>Coors Premium 1873</h3>
+                    <p>12oz</p>
+                  </div>
+                </div>
+                <div class="td">
+
+                </div>
+                <div class="td">
+                  <p class="price">$20</p>
+                </div>
+              </div>
+              <!--<div class="tr">-->
+                <!--<div class="td">-->
+                  <!--<div class="img-box">-->
+                    <!--<img src="images/goods/11.png" alt=""/>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="td">-->
+
+                <!--</div>-->
+                <!--<div class="td">-->
+
+                <!--</div>-->
+              <!--</div>-->
+            </div>
+          </div>
+          <div class="cart__actions">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div class="container">
     <h2 class="skew">
       SHOP
@@ -98,29 +151,26 @@
           <a href="#"><img src="images/icons/cart.png" srcset="images/icons/cart@2x.png" alt="" /></a>
         </div>
         <div class="cart-preview__info">
-          <span>0</span>
+          <span>2</span>
           <p>VIEW</p>
         </div>
-      </div>
-      <div class="cart">
-
       </div>
     </div>
 
     <div class="filter">
       <ul>
-        <li><a href="#" data-target="beers">BEERS</a></li>
-        <li><a href="#" data-target="craftbeer" class="active">CRAFT BEER</a></li>
+        <li><a href="#" data-target="beers" class="active">BEERS</a></li>
+        <li><a href="#" data-target="craftbeer">CRAFT BEER</a></li>
         <li><a href="#" data-target="cider">CIDER</a></li>
         <li><a href="#" data-target="coolers">COOLERS</a></li>
-        <li><a href="#" data-target="malt" class="active">MALT</a></li>
+        <li><a href="#" data-target="malt">MALT</a></li>
         <li><a href="#" data-target="water">WATER</a></li>
       </ul>
 
       <div class="brands-select">
         <select name="brand">
           <option value="">shop by brand</option>
-          <option value="molson coors">molson coors</option>
+          <option value="molson coors" selected>molson coors</option>
           <option value="duvel">duvel</option>
           <option value="seagrams">seagrams</option>
         </select>
@@ -132,14 +182,33 @@
     <div class="store">
 
       <div class="row store__items">
-        <div class="label popular skew">POPULAR</div>
 
         <div class="store__item">
           <div class="info-block">
             <div class="info-block__img">
-              <img src="images/goods/1.png" alt="beer" />
+              <img src="images/goods/11.png" alt="beer" />
             </div>
-            <h3>longest name of goods thth</h3>
+            <h3>coors premium 1873</h3>
+            <p><span class="volume">300 ML</span> / <span class="price">$20</span></p>
+          </div>
+          <div class="actions-block">
+            <select name="count">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+            <a href="#"></a>
+          </div>
+        </div>
+        <div class="store__item">
+          <div class="info-block">
+            <div class="info-block__img">
+              <img src="images/goods/12.png" alt="beer" />
+            </div>
+            <h3>coors light</h3>
             <p><span class="volume">300 ML</span> / <span class="price">$10</span></p>
           </div>
           <div class="actions-block">
@@ -157,29 +226,9 @@
         <div class="store__item">
           <div class="info-block">
             <div class="info-block__img">
-              <img src="images/goods/2.png" alt="beer" />
+              <img src="images/goods/13.png" alt="beer" />
             </div>
-            <h3>duvel</h3>
-            <p><span class="volume">300 ML</span> / <span class="price">$10</span></p>
-          </div>
-          <div class="actions-block">
-            <select name="count">
-              <option value="1">1</option>
-              <option value="2" selected>2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-            <a href="#"></a>
-          </div>
-        </div>
-        <div class="store__item">
-          <div class="info-block">
-            <div class="info-block__img">
-              <img src="images/goods/3.png" alt="beer" />
-            </div>
-            <h3>la chouffe</h3>
+            <h3>coors light can</h3>
             <p><span class="volume">300 ML</span> / <span class="price">$10</span></p>
           </div>
           <div class="actions-block">
@@ -198,9 +247,9 @@
         <div class="store__item">
           <div class="info-block">
             <div class="info-block__img">
-              <img src="images/goods/4.png" alt="beer" />
+              <img src="images/goods/14.png" alt="beer" />
             </div>
-            <h3>H.I.P.A</h3>
+            <h3>coors light can</h3>
             <p><span class="volume">355 ML</span> / <span class="price">$15</span></p>
           </div>
           <div class="actions-block">
@@ -220,9 +269,9 @@
         <div class="store__item">
           <div class="info-block">
             <div class="info-block__img">
-              <img src="images/goods/5.png" alt="beer" />
+              <img src="images/goods/15.png" alt="beer" />
             </div>
-            <h3>blue moon</h3>
+            <h3>coors light can</h3>
             <p><span class="volume">355 ML</span> / <span class="price">$15</span></p>
           </div>
           <div class="actions-block">
@@ -239,101 +288,12 @@
           </div>
         </div>
 
-        <div class="clear-left"></div>
-      </div>
-
-      <div class="row store__items">
-        <div class="label special skew">SPECIALS & DEALS</div>
-
         <div class="store__item">
           <div class="info-block">
             <div class="info-block__img">
-              <img src="images/goods/6.png" alt="beer" />
+              <img src="images/goods/16.png" alt="beer" />
             </div>
-            <h3>seagrams - mango</h3>
-            <p><span class="volume">300 ML</span> / <span class="price">$10</span></p>
-          </div>
-          <div class="actions-block">
-            <select name="count">
-              <option value="1">1</option>
-              <option value="2" selected>2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-            <a href="#"></a>
-          </div>
-        </div>
-        <div class="store__item">
-          <div class="info-block">
-            <div class="info-block__img">
-              <img src="images/goods/7.png" alt="beer" />
-            </div>
-            <h3>seagrams - sangria</h3>
-            <p><span class="volume">300 ML</span> / <span class="price">$10</span></p>
-          </div>
-          <div class="actions-block">
-            <select name="count">
-              <option value="1">1</option>
-              <option value="2" selected>2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-            <a href="#"></a>
-          </div>
-        </div>
-        <div class="store__item">
-          <div class="info-block">
-            <div class="info-block__img">
-              <img src="images/goods/8.png" alt="beer" />
-            </div>
-            <h3>seagrams - calypso C</h3>
-            <p><span class="volume">300 ML</span> / <span class="price">$10</span></p>
-          </div>
-          <div class="actions-block">
-            <select name="count">
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-            <a href="#"></a>
-          </div>
-        </div>
-        <div class="store__item">
-          <div class="info-block">
-            <div class="info-block__img">
-              <img src="images/goods/9.png" alt="beer" />
-            </div>
-            <h3>seagrams - bahama...</h3>
-            <p><span class="volume">300 ML</span> / <span class="price">$10</span></p>
-          </div>
-          <div class="actions-block">
-            <select name="count">
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-            <a href="#"></a>
-          </div>
-        </div>
-
-        <div class="store__item">
-          <div class="info-block">
-            <div class="info-block__img">
-              <img src="images/goods/10.png" alt="beer" />
-            </div>
-            <h3>seagrams - longest name of goods</h3>
+            <h3>light non-alcoholic</h3>
             <p><span class="volume">355 ML</span> / <span class="price">$15</span></p>
           </div>
           <div class="actions-block">
@@ -350,141 +310,6 @@
           </div>
         </div>
 
-        <div class="clear-left"></div>
-      </div>
-
-      <div class="row store__items">
-        <div class="label new skew">NEW IS STORE</div>
-        <div class="store__item">
-          <div class="info-block">
-            <div class="info-block__img">
-              <img src="images/goods/6.png" alt="beer" />
-            </div>
-            <h3>seagrams - mango</h3>
-            <p><span class="volume">300 ML</span> / <span class="price">$10</span></p>
-          </div>
-          <div class="actions-block">
-            <select name="count">
-              <option value="1">1</option>
-              <option value="2" selected>2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-            <a href="#"></a>
-          </div>
-        </div>
-        <div class="store__item">
-          <div class="info-block">
-            <div class="info-block__img">
-              <img src="images/goods/7.png" alt="beer" />
-            </div>
-            <h3>seagrams - sangria</h3>
-            <p><span class="volume">300 ML</span> / <span class="price">$10</span></p>
-          </div>
-          <div class="actions-block">
-            <select name="count">
-              <option value="1">1</option>
-              <option value="2" selected>2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-            <a href="#"></a>
-          </div>
-        </div>
-        <div class="store__item">
-          <div class="info-block">
-            <div class="info-block__img">
-              <img src="images/goods/8.png" alt="beer" />
-            </div>
-            <h3>seagrams - calypso C</h3>
-            <p><span class="volume">300 ML</span> / <span class="price">$10</span></p>
-          </div>
-          <div class="actions-block">
-            <select name="count">
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-            <a href="#"></a>
-          </div>
-        </div>
-        <div class="store__item">
-          <div class="info-block">
-            <div class="info-block__img">
-              <img src="images/goods/9.png" alt="beer" />
-            </div>
-            <h3>seagrams - bahama...</h3>
-            <p><span class="volume">300 ML</span> / <span class="price">$10</span></p>
-          </div>
-          <div class="actions-block">
-            <select name="count">
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-            <a href="#"></a>
-          </div>
-        </div>
-
-        <div class="store__item">
-          <div class="info-block">
-            <div class="info-block__img">
-              <img src="images/goods/10.png" alt="beer" />
-            </div>
-            <h3>seagrams - longest name of goods</h3>
-            <p><span class="volume">355 ML</span> / <span class="price">$15</span></p>
-          </div>
-          <div class="actions-block">
-            <select name="count">
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-            <a href="#"></a>
-          </div>
-        </div>
-        <div class="clear-left"></div>
-      </div>
-
-      <div class="special-offer skew">
-        <div class="text-block">
-          <p>Blue Moon 24<br>
-             Anniversary special pack<br>
-             <span class="red">800 packs avalaible</span>
-          </p>
-          <span class="buynow">buy Now!</span>
-        </div>
-        <div class="store-block">
-          <img src="images/blue_moon.png" alt="">
-          <div class="actions-block unskew">
-            <select name="count">
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-            </select>
-            <a href="#"></a>
-          </div>
-        </div>
         <div class="clear-left"></div>
       </div>
 

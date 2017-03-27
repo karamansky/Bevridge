@@ -1387,6 +1387,7 @@
 	background-repeat: no-repeat, no-repeat
 	background-color: #D1242A
 	background-size: 100%
+	position: relative
 
 	h2
 		text-align: center
@@ -1468,8 +1469,8 @@
 		top: -102px
 		right: 0
 		width: 135px
-		cursor: pointer
-		
+		z-index: 3
+
 		.cart-preview__icon
 			width: 50px
 			float: left
@@ -1484,6 +1485,7 @@
 			position: relative
 			text-align: center
 			padding-right: 6px
+			cursor: pointer
 			span
 				margin-top: -35px
 				display: block
@@ -1500,6 +1502,70 @@
 				font-family: $bebas-bold
 				font-size: 25px
 				line-height: 35px
+
+.cart
+	margin-top: -18px
+	background: rgba(208, 45, 42, 0.8)
+	width: 100%
+	height: 100%
+	position: absolute
+	z-index: 1
+
+	.cart-wrapper
+		position: relative
+
+	.cart__body
+		width: 650px
+		padding: 25px
+		height: 460px
+		background: #fff
+		position: absolute
+		right: 0
+		top: 80px
+
+	.cart__table
+		.table
+			display: table
+			.tr
+				display: table-row
+				.th
+					display: table-cell
+					font-family: $archer-bold
+					font-size: 20px
+					text-transform: uppercase
+					color: $red
+					padding-bottom: 20px
+				.td
+					//margin-bottom: 15px
+					min-width: 1%
+					display: table-cell
+					background: #f3f3f3
+					width: 100%
+					vertical-align: middle
+
+	.td .img-box
+		text-align: center
+		max-width: 70px
+		max-height: 105px
+
+	.info-block h3
+		font-family: $bebas-bold
+		font-size: 25px
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+
+	.info-block p
+		font-family: Arial, sans-serif
+		font-size: 15px
+		text-transform: uppercase
+		padding-bottom: 8px
+
+	.td .price
+		font-size: 25px
+		color: $red
+		font-family: Arial, sans-serif
+		font-weight: bold
 
 .store
 	.label

@@ -1356,7 +1356,8 @@ li {
   background-position: top center, bottom center;
   background-repeat: no-repeat, no-repeat;
   background-color: #D1242A;
-  background-size: 100%; }
+  background-size: 100%;
+  position: relative; }
   #store h2 {
     text-align: center;
     color: #fff;
@@ -1429,7 +1430,7 @@ li {
     top: -102px;
     right: 0;
     width: 135px;
-    cursor: pointer; }
+    z-index: 3; }
     #store .cart-preview .cart-preview__icon {
       width: 50px;
       float: left; }
@@ -1441,7 +1442,8 @@ li {
       width: 65px;
       position: relative;
       text-align: center;
-      padding-right: 6px; }
+      padding-right: 6px;
+      cursor: pointer; }
       #store .cart-preview .cart-preview__info span {
         margin-top: -35px;
         display: block;
@@ -1458,6 +1460,61 @@ li {
         font-family: "BebasNeue-Bold", sans-serif;
         font-size: 25px;
         line-height: 35px; }
+
+.cart {
+  margin-top: -18px;
+  background: rgba(208, 45, 42, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1; }
+  .cart .cart-wrapper {
+    position: relative; }
+  .cart .cart__body {
+    width: 650px;
+    padding: 25px;
+    height: 460px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 80px; }
+  .cart .cart__table .table {
+    display: table; }
+    .cart .cart__table .table .tr {
+      display: table-row; }
+      .cart .cart__table .table .tr .th {
+        display: table-cell;
+        font-family: "Archer-Bold", sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #d10f26;
+        padding-bottom: 20px; }
+      .cart .cart__table .table .tr .td {
+        min-width: 1%;
+        display: table-cell;
+        background: #f3f3f3;
+        width: 100%;
+        vertical-align: middle; }
+  .cart .td .img-box {
+    text-align: center;
+    max-width: 70px;
+    max-height: 105px; }
+  .cart .info-block h3 {
+    font-family: "BebasNeue-Bold", sans-serif;
+    font-size: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .cart .info-block p {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-bottom: 8px; }
+  .cart .td .price {
+    font-size: 25px;
+    color: #d10f26;
+    font-family: Arial, sans-serif;
+    font-weight: bold; }
 
 .store .label {
   width: 152px;
