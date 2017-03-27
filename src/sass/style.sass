@@ -51,6 +51,9 @@
 	overflow: scroll!important
 	.soc
 		display: inline-block
+		a img
+			width: 26px
+			height: 25px
 	ul
 		min-width: 320px
 		max-width: 600px
@@ -397,6 +400,7 @@
 
 	.owl-pagination,
 	.owl-buttons
+	.owl-pagination
 		display: none
 
 	.slider
@@ -404,6 +408,9 @@
 		max-width: 1222px
 		margin: 0 auto
 
+		//.owl-controls.clickable
+			//overflow: hidden
+			//transform: skewY(3.7deg)
 
 		/*.owl-prev*/
 		.left-btn
@@ -1031,7 +1038,6 @@
 	padding-bottom: 220px
 	margin-bottom: -65px
 
-
 .aboutus_page
 
 	.content
@@ -1371,6 +1377,298 @@
 				font-size: 27px
 				line-height: 30px
 				margin-bottom: 8px
+
+
+
+#store
+	padding: 203px 0 50px 0
+	background-image: url("../images/news_bg_top.jpg"), url("../images/news_bg_bottom.jpg")
+	background-position: top center, bottom center
+	background-repeat: no-repeat, no-repeat
+	background-color: #D1242A
+	background-size: 100%
+
+	h2
+		text-align: center
+		color: #fff
+		position: relative
+		margin-bottom: 73px
+		margin-top: -23px
+		&:after
+			position: absolute
+			left: 50%
+			margin-left: -108px
+			content: ""
+			display: block
+			width: 226px
+			height: 6px
+			background: $black
+			bottom: -25px
+
+	.filter
+		margin-left: -16px
+		margin-bottom: 56px
+		overflow: hidden
+		ul
+			float: left
+			overflow: hidden
+			li
+				float: left
+				margin-right: 10px
+
+		a
+			display: inline-block
+			font-family: $bebas-bold
+			font-size: 25px
+			text-align: center
+			line-height: 40px
+			padding: 1px 20px 0 20px
+			color: #fff
+			&:hover
+				background: $black
+
+		a.active
+			background: $black
+
+	.brands-select
+		position: relative
+		float: right
+
+		select
+			display: block
+			width: 275px
+			font-family: $bebas-bold
+			font-size: 25px
+			line-height: 25px
+			padding: 9px 45px 6px 15px
+			border: none
+			background: #fff url("../images/icons/select-icon.jpg") top right no-repeat
+			-webkit-user-select: none
+			-moz-user-select: -moz-none
+			-ms-user-select: none
+			user-select: none
+			/* hide select triangle */
+			-webkit-appearance: none
+			-moz-appearance: radio-container
+			appearance: none
+
+			option
+				width: 275px
+				font-family: $bebas-bold
+				font-size: 25px
+				line-height: 25px
+				padding: 3px 20px 3px 13px
+
+	.cart-wrapper
+		float: right
+		position: relative
+
+	.cart-preview
+		position: absolute
+		top: -102px
+		right: 0
+		width: 135px
+		cursor: pointer
+		
+		.cart-preview__icon
+			width: 50px
+			float: left
+			img
+				width: 50px
+				height: 55px
+
+		.cart-preview__info
+			//display: none
+			float: right
+			width: 65px
+			position: relative
+			text-align: center
+			padding-right: 6px
+			span
+				margin-top: -35px
+				display: block
+				width: 65px
+				height: 65px
+				background: $black
+				border-radius: 50%
+				color: #fff
+				font-family: $bebas-bold
+				text-align: center
+				font-size: 35px
+				line-height: 65px
+			p
+				font-family: $bebas-bold
+				font-size: 25px
+				line-height: 35px
+
+.store
+	.label
+		width: 152px
+		color: #fff
+		font-family: $archer-bold
+		font-size: 17px
+		background: #c5161d
+		line-height: 48px
+		text-align: center
+		letter-spacing: -1px
+		position: absolute
+		left: 10px
+		top: -19px
+
+	.label.special
+		background: $blue
+
+	.label.new
+		background: $yellow
+
+	.row
+		position: relative
+		margin-left: -10px
+		margin-right: -10px
+
+	.store__item
+		margin: 0 10px 34px 10px
+		background: #fff
+		width: calc(20% - 50px)
+		padding: 0 15px 15px 15px
+		float: left
+
+	.info-block
+		border-bottom: 1px solid $black
+
+	.info-block__img
+		max-width: 180px
+		max-height: 230px
+		display: table-cell
+		width: 1%
+		vertical-align: middle
+		img
+			display: block
+			margin: 0 auto 0 auto
+
+	.info-block h3
+		font-family: $bebas-bold
+		font-size: 25px
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+
+	.info-block p
+		font-family: Arial, sans-serif
+		font-size: 15px
+		color: $red
+		padding-bottom: 8px
+
+	.info-block span.volume
+		font-family: Arial, sans-serif
+		font-size: 15px
+		color: $black
+		padding-right: 10px
+
+	.info-block span.price
+		font-family: Arial, sans-serif
+		font-weight: bold
+		color: $red
+		padding-left: 10px
+
+	.actions-block
+		padding-top: 15px
+		overflow: hidden
+		select
+			display: inline-block
+			float: left
+			width: 69px
+			font-family: Arial, sans-serif
+			font-size: 18px
+			line-height: 33px
+			padding: 0 0 0 46px
+			text-align: center
+			border: 1px solid $black
+			background: url("../images/icons/select_count_icon.png") top left no-repeat
+			-webkit-user-select: none
+			-moz-user-select: -moz-none
+			-ms-user-select: none
+			user-select: none
+			/* hide select triangle */
+			-webkit-appearance: none
+			-moz-appearance: radio-container
+			appearance: none
+
+			option
+				width: 69px
+				font-family: Arial, sans-serif
+				font-size: 18px
+				line-height: 33px
+				padding: 3px 20px 3px 13px
+
+		a
+			float: right
+			display: block
+			width: 107px
+			height: 34px
+			background: url("../images/icons/tocard_button.png") center no-repeat
+
+.special-offer
+	margin: 50px 0 110px 0
+	max-height: 250px
+
+	.text-block
+		background: #000
+		width: 50%
+		float: left
+		height: 250px
+		text-align: center
+		p
+			padding-top: 35px
+			font-family: $archer-semibold
+			color: #fff
+			text-align: center
+			font-size: 35px
+			line-height: 35px
+			max-width: 400px
+			margin: 0 auto
+			position: relative
+			display: block
+
+		.red
+			color: $red
+			text-transform: uppercase
+			font-family: $archer-bold
+
+		span.buynow
+			font-size: 55px
+			line-height: 40px
+			color: #fff
+			text-align: center
+			margin: 0 auto
+			font-family: $archer-bold
+			text-transform: uppercase
+			border-top: 4px solid #fff
+			display: inline-block
+			margin-top: 13px
+			padding: 15px 10px
+
+	.store-block
+		width: 50%
+		height: 250px
+		float: left
+		background: #fff
+
+		img
+			max-width: 290px
+			max-height: 315px
+			width: 100%
+			margin: -30px 10px 0 60px
+
+		.actions-block
+			float: right
+			margin-right: 20px
+			margin-top: 145px
+			select
+				margin-right: 15px
+
+
+
 //
 //
 //

@@ -65,6 +65,13 @@
 			font-size: 25px
 			padding: 25px 20px
 
+	.store .store__item
+		width: calc(33% - 50px)
+
+	.special-offer .store-block img
+		width: 40%
+		margin: 0 0 0 50px
+
 
 
 @media screen and (max-width: 1024px)
@@ -224,6 +231,28 @@
 		padding: 44px 40px
 		width: calc(50% - 80px)
 
+	#store .brands-select
+		float: left
+		margin-top: 30px
+		margin-left: 20px
+
+	.special-offer
+		max-height: 100%
+
+	.special-offer .text-block
+		width: 100%
+		float: none
+
+	.special-offer .store-block
+		width: 100%
+		float: none
+
+	.special-offer .store-block img
+		width: 280px
+		margin-top: -30px
+
+
+
 @media screen and (max-width: 768px)
 	.header
 		padding-bottom: 100px
@@ -344,6 +373,23 @@
 	#wheregoing .content .img-box
 		margin: 35px 0
 
+	.store .actions-block select
+		float: none
+		width: 100%
+		padding: 0 0 0 15px
+		background: url(../images/icons/select_count_icon.png) top right no-repeat
+		margin-bottom: 15px
+
+	.store .actions-block a
+		float: none
+		margin: 0 auto
+
+	#store .filter
+		margin-left: 0
+		a
+			padding-left: 15px
+			padding-right: 15px
+
 
 @media screen and (max-width: 600px)
 	.header .caption__text,
@@ -399,6 +445,44 @@
 	.header .header__caption
 		height: auto
 
+	.store .store__item
+		width: calc(90% - 50px)
+		margin-left: auto
+		margin-right: auto
+
+	.store .store__item
+		float: none
+
+	#store .filter
+		margin-left: 0px
+		text-align: center
+		
+	#store .filter ul
+		float: none
+		li
+			float: none
+
+	.store .row
+		margin-left: 0
+		margin-right: 0
+
+	#store .brands-select
+		width: 100%
+		margin-left: 0
+		select
+			width: 99%
+
+	#store .cart-wrapper
+		float: none
+		overflow: hidden
+
+	#store .cart-preview
+		position: relative
+		left: auto
+		top: auto
+		overflow: hidden
+		padding-top: 50px
+		margin: 0 auto 30px auto
 
 @media screen and (max-width: 450px) //iPhone6
 	.phone-hidden
@@ -445,6 +529,17 @@
 	.aboutus_page .coverage p.coverage__item4
 		padding: 10px
 
+	.special-offer .store-block img
+		max-width: 150px
+		margin-top: 40px
+
+	.special-offer .store-block .actions-block
+		margin-top: 65px
+
+	.special-offer .text-block p
+		font-size: 29px
+		line-height: 30px
+
 @media screen and (max-width: 350px) //iPhone5
 	.phone-navigation
 		height: 100%
@@ -455,4 +550,7 @@
 	.header .caption__text
 		p
 			font-size: 33px
+
+	.special-offer .store-block img
+		margin-left: 10px
 

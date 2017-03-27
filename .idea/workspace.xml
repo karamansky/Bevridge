@@ -9,6 +9,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/style.css" afterPath="$PROJECT_DIR$/dist/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/about.html" afterPath="$PROJECT_DIR$/src/about.html" />
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/brands.html" afterPath="$PROJECT_DIR$/src/brands.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/csr.html" afterPath="$PROJECT_DIR$/src/csr.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/style.css" afterPath="$PROJECT_DIR$/src/css/style.css" />
@@ -18,6 +19,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/news_open.html" afterPath="$PROJECT_DIR$/src/news_open.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/_base.sass" afterPath="$PROJECT_DIR$/src/sass/_base.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/_media.sass" afterPath="$PROJECT_DIR$/src/sass/_media.sass" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/magnific-popup.min.css" afterPath="$PROJECT_DIR$/src/css/magnific-popup.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/style.css" afterPath="$PROJECT_DIR$/src/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/common.js" afterPath="$PROJECT_DIR$/src/js/common.js" />
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/style.sass" afterPath="$PROJECT_DIR$/src/sass/style.sass" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,14 +37,23 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <splitter split-orientation="horizontal" split-proportion="0.57787323">
+=======
+    <splitter split-orientation="horizontal" split-proportion="0.59828144">
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/index.html">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state relative-caret-position="245">
                   <caret line="571" column="22" lean-forward="false" selection-start-line="571" selection-start-column="22" selection-end-line="571" selection-end-column="22" />
+=======
+                <state relative-caret-position="201">
+                  <caret line="261" column="0" lean-forward="false" selection-start-line="261" selection-start-column="0" selection-end-line="349" selection-end-column="10" />
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
                   <folding>
                     <element signature="e#1103#1110#0" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -62,8 +77,13 @@
           <file leaf-file-name="brands.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/brands.html">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state relative-caret-position="377">
                   <caret line="211" column="13" lean-forward="false" selection-start-line="211" selection-start-column="13" selection-end-line="211" selection-end-column="13" />
+=======
+                <state relative-caret-position="241">
+                  <caret line="161" column="16" lean-forward="false" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="16" />
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="e#7151#7157#1" expanded="true" />
@@ -80,8 +100,13 @@
           <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/about.html">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state relative-caret-position="311">
                   <caret line="341" column="13" lean-forward="false" selection-start-line="341" selection-start-column="13" selection-end-line="341" selection-end-column="13" />
+=======
+                <state relative-caret-position="572">
+                  <caret line="172" column="16" lean-forward="false" selection-start-line="172" selection-start-column="16" selection-end-line="172" selection-end-column="16" />
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -89,11 +114,19 @@
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
           <file leaf-file-name="capabilities.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/capabilities.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="707">
                   <caret line="204" column="262" lean-forward="false" selection-start-line="204" selection-start-column="262" selection-end-line="204" selection-end-column="262" />
+=======
+          <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/gulpfile.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="770">
+                  <caret line="71" column="4" lean-forward="false" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
                   <folding />
                 </state>
               </provider>
@@ -123,11 +156,16 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/js/common.js">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state relative-caret-position="163">
                   <caret line="79" column="22" lean-forward="false" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
+=======
+                <state relative-caret-position="519">
+                  <caret line="98" column="52" lean-forward="true" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
                   <folding />
                 </state>
               </provider>
@@ -136,10 +174,17 @@
           <file leaf-file-name="style.sass" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/sass/style.sass">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state relative-caret-position="374">
                   <caret line="50" column="28" lean-forward="false" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
                   <folding>
                     <marker date="1490569199464" expanded="true" signature="10543:10585" ph="..." />
+=======
+                <state relative-caret-position="440">
+                  <caret line="409" column="13" lean-forward="true" selection-start-line="409" selection-start-column="4" selection-end-line="409" selection-end-column="13" />
+                  <folding>
+                    <marker date="1490538576817" expanded="true" signature="10546:10588" ph="..." />
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
                   </folding>
                 </state>
               </provider>
@@ -165,11 +210,16 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_media.sass" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_media.sass" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/sass/_media.sass">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state relative-caret-position="725">
                   <caret line="344" column="18" lean-forward="false" selection-start-line="344" selection-start-column="18" selection-end-line="344" selection-end-column="18" />
+=======
+                <state relative-caret-position="989">
+                  <caret line="423" column="22" lean-forward="false" selection-start-line="423" selection-start-column="22" selection-end-line="423" selection-end-column="22" />
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
                   <folding />
                 </state>
               </provider>
@@ -225,6 +275,7 @@
       <find>header</find>
       <find>caption__img</find>
       <find>ourma</find>
+<<<<<<< HEAD
       <find>footer</find>
       <find>prev</find>
       <find>ourmar</find>
@@ -232,6 +283,8 @@
       <find>call.php</find>
       <find>what</find>
       <find>UppercaseAndUnderline</find>
+=======
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
     </findStrings>
     <replaceStrings>
       <replace>2x&quot;</replace>
@@ -251,6 +304,10 @@
         <option value="$PROJECT_DIR$/../Buxo/HTML/index.html" />
         <option value="$USER_HOME$/Desktop/my_new_page.php" />
         <option value="$PROJECT_DIR$/src/sass/_vars.sass" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/src/news.html" />
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
         <option value="$PROJECT_DIR$/src/sass/libs.sass" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/about_test.html" />
@@ -264,11 +321,18 @@
         <option value="$PROJECT_DIR$/src/news_open.html" />
         <option value="$PROJECT_DIR$/src/csr.html" />
         <option value="$PROJECT_DIR$/src/brands.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/news.html" />
         <option value="$PROJECT_DIR$/src/capabilities.html" />
         <option value="$PROJECT_DIR$/src/sass/style.sass" />
+=======
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
         <option value="$PROJECT_DIR$/src/sass/_media.sass" />
+        <option value="$PROJECT_DIR$/src/about.html" />
+        <option value="$PROJECT_DIR$/src/sass/style.sass" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/src/js/common.js" />
       </list>
     </option>
   </component>
@@ -613,7 +677,11 @@
         <state relative-caret-position="198">
           <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding>
+<<<<<<< HEAD
             <marker date="1490569199464" expanded="true" signature="10543:10585" ph="..." />
+=======
+            <marker date="1490538576817" expanded="true" signature="10546:10588" ph="..." />
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
           </folding>
         </state>
       </provider>
@@ -721,6 +789,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$USER_HOME$/Desktop/mysite/CHANEL_SET_INST/medias-gooods.ru/chanel-set-inst/politics.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -730,6 +799,9 @@
       </provider>
     </entry>
     <entry file="file://C:/WebServers/home/2test.loc/www_/index.html">
+=======
+    <entry file="file://$PROJECT_DIR$/src/sass/libs.sass">
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2907">
           <caret line="611" column="0" lean-forward="true" selection-start-line="611" selection-start-column="0" selection-end-line="611" selection-end-column="0" />
@@ -753,6 +825,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://C:/WebServers/home/2test.loc/www_/email.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -800,7 +873,29 @@
           <folding>
             <marker date="1490561228677" expanded="true" signature="572:602" ph="..." />
             <marker date="1490561228677" expanded="true" signature="643:690" ph="..." />
+=======
+    <entry file="file://$PROJECT_DIR$/src/brands.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="161" column="16" lean-forward="false" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#7151#7157#1" expanded="true" />
+            <element signature="e#7231#7237#1" expanded="true" />
+            <element signature="e#7295#7301#1" expanded="true" />
+            <element signature="e#7369#7375#1" expanded="true" />
+            <element signature="e#7431#7437#1" expanded="true" />
+            <element signature="e#7489#7495#1" expanded="true" />
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/_media.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="989">
+          <caret line="423" column="22" lean-forward="false" selection-start-line="423" selection-start-column="22" selection-end-line="423" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -820,6 +915,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/csr.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
@@ -851,13 +947,33 @@
             <element signature="e#7431#7437#1" expanded="true" />
             <element signature="e#7489#7495#1" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/.bowerrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="245">
           <caret line="571" column="22" lean-forward="false" selection-start-line="571" selection-start-column="22" selection-end-line="571" selection-end-column="22" />
+=======
+        <state relative-caret-position="201">
+          <caret line="261" column="0" lean-forward="false" selection-start-line="261" selection-start-column="0" selection-end-line="349" selection-end-column="10" />
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
           <folding>
             <element signature="e#1103#1110#0" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -867,6 +983,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/news.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -879,24 +996,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="707">
           <caret line="204" column="262" lean-forward="false" selection-start-line="204" selection-start-column="262" selection-end-line="204" selection-end-column="262" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="172" column="16" lean-forward="false" selection-start-line="172" selection-start-column="16" selection-end-line="172" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="71" column="4" lean-forward="false" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/style.sass">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="374">
           <caret line="50" column="28" lean-forward="false" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
           <folding>
             <marker date="1490569199464" expanded="true" signature="10543:10585" ph="..." />
+=======
+        <state relative-caret-position="440">
+          <caret line="409" column="13" lean-forward="true" selection-start-line="409" selection-start-column="4" selection-end-line="409" selection-end-column="13" />
+          <folding>
+            <marker date="1490538576817" expanded="true" signature="10546:10588" ph="..." />
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/_media.sass">
+    <entry file="file://$PROJECT_DIR$/src/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="725">
           <caret line="344" column="18" lean-forward="false" selection-start-line="344" selection-start-column="18" selection-end-line="344" selection-end-column="18" />
+=======
+        <state relative-caret-position="519">
+          <caret line="98" column="52" lean-forward="true" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
+>>>>>>> 82264f9b15cbb09c3686d767fbc1e7650df234a3
           <folding />
         </state>
       </provider>
