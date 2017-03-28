@@ -105,7 +105,8 @@
 .header-wrapper
 	background: #CF212A
 .header
-	padding-bottom: 166px
+	//padding-bottom: 166px
+	padding-bottom: 40px
 	background: #CF212A url("../images/index_header_bg.jpg") top center no-repeat
 	background-size: cover
 
@@ -160,28 +161,53 @@
 .header__slider
 	padding-top: 191px
 
+.carousel__items
+	max-width: 1607px
+	margin: 0 auto
+	.owl-pagination
+		position: absolute
+		right: 207px
+		top: 735px
+
+.owl-theme .owl-controls .owl-page span
+	display: block!important
+	width: 10px!important
+	height: 10px!important
+	border-radius: 50%!important
+	border: 2px solid $black!important
+	background: transparent!important
+	opacity: 1!important
+	margin: 5px 9px 5px 7px!important
+
+.owl-theme .owl-controls .owl-page.active span
+	background: $black!important
+	opacity: 1!important
+
+.carousel__item
+	padding-bottom: 118px
+
 .slider__items
 	position: relative
-	.pager
-		position: absolute
-		right: 0
-		bottom: -55px
-		ul
-			overflow: hidden
-		li
-			float: left
-			margin-right: 18px
-			&:last-child
-				margin-right: 3px
-		a
-			display: block
-			width: 10px
-			height: 10px
-			border-radius: 50%
-			border: 2px solid $black
-			background: transparent
-			&.active
-				background: $black
+	//.pager
+	//	position: absolute
+	//	right: 0
+	//	bottom: -55px
+	//	ul
+	//		overflow: hidden
+	//	li
+	//		float: left
+	//		margin-right: 18px
+	//		&:last-child
+	//			margin-right: 3px
+	//	span
+	//		display: block
+	//		width: 10px
+	//		height: 10px
+	//		border-radius: 50%
+	//		border: 2px solid $black
+	//		background: transparent
+	//		&.active
+	//			background: $black
 
 .slider__item
 	position: relative
