@@ -390,6 +390,39 @@
 			padding-left: 15px
 			padding-right: 15px
 
+	#store .cart-wrapper
+		float: none
+
+	.cart .cart__body
+		position: relative
+		width: calc(100% - 50px)
+		min-width: calc(100% - 50px)
+
+@media screen and (max-width: 700px)
+	.cart
+		margin-top: -98px
+	.cart .cart__table .table.cart-head
+		display: none
+
+
+	.cart .cart__table .tr .td:nth-child(2),
+	.cart .cart__table .tr .th:nth-child(2)
+		min-width: 150px
+
+	.cart .info-block h3,
+	.cart .info-block p
+		max-width: 150px
+
+	.cart .qty-wrap
+		padding-right: 10px
+	.cart .cart__table .tr .th:nth-child(3)
+		width: 70px
+	.cart .cart__table .tr .td:first-child
+		min-width: 65px
+	.cart .cart__table .tr .td:last-child,
+	#store .cart__total .cart__total-price
+		padding-right: 15px
+
 
 @media screen and (max-width: 600px)
 	.header .caption__text,
@@ -474,7 +507,7 @@
 
 	#store .cart-wrapper
 		float: none
-		overflow: hidden
+		//overflow: hidden
 
 	#store .cart-preview
 		position: relative
@@ -483,6 +516,7 @@
 		overflow: hidden
 		padding-top: 50px
 		margin: 0 auto 30px auto
+		z-index: 0
 
 @media screen and (max-width: 450px) //iPhone6
 	.phone-hidden
@@ -540,6 +574,45 @@
 		font-size: 29px
 		line-height: 30px
 
+	.cart .cart__body
+		padding: 15px
+		width: calc(100% - 30px)
+
+	.cart .cart__table .table
+		display: block
+		.tr
+			display: block
+			overflow: hidden
+			.td
+				text-align: center
+				display: block
+
+	.cart .td .img-box
+		max-width: 100%
+
+	.cart .info-block h3,
+	.cart .info-block p
+		max-width: calc(100% - 10px)
+		text-align: center
+
+	.cart .qty-wrap
+		overflow: hidden
+		width: 69px
+		margin: 0 auto
+
+	.cart .cart__table .tr .td:last-child
+		padding: 25px 0
+		text-align: center
+
+	.cart .delete
+		right: 10px
+		top: -260px
+
+	#store .cart__total
+		padding-left: 0
+
+
+
 @media screen and (max-width: 350px) //iPhone5
 	.phone-navigation
 		height: 100%
@@ -553,4 +626,10 @@
 
 	.special-offer .store-block img
 		margin-left: 10px
+
+	#store .cart__total .cart__total-heading p
+		font-size: 16px
+		
+	#store .cart__action
+		font-size: 21px
 
