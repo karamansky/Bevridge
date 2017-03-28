@@ -3,6 +3,9 @@ $(function(){
 
 	$(document).ready(function(){
 
+		/*calc total price in cart*/
+		$(".cart__total-price p.total span").html(total_price());
+
 		/*navigation menu show/hide*/
 		$(".phone-navigation .close").click(function(){
 			$(this).parent().css("transform", "translate3d(-100%,0,0)");
@@ -60,6 +63,7 @@ $(function(){
 			}
 		});
 
+
 		/**
 		 * activate popup windows
 		 */
@@ -93,6 +97,9 @@ $(function(){
 			navigation	:	true
 		});
 
+		/**
+		 * custom navigation in carousel
+		 */
 		$('#ourmarket .right-btn').click(function(e) {
 			e.preventDefault();
 			// owl.trigger('next.owl.carousel');
@@ -112,6 +119,47 @@ $(function(){
 			// owl.trigger('prev.owl.carousel');
 			$("#ourmarket .slider__items").owlCarousel().trigger('owl.prev');
 		});
+
+
+		/**
+		 * show/hide card overlay
+		 */
+		$(".continue-shopping").click(function(){
+			$(".cart").hide();
+		});
+		$(".cart-preview").click(function(){
+			$(".cart").show();
+		});
+
+
+		/**
+		 * cart delete item
+		 */
+		$(document).on("click", ".cart .delete", function(e){
+			e.preventDefault();
+			$(this).parent().parent().parent().parent().remove();
+
+			$(".cart__total-price p.total span").html(total_price());
+
+			if(!$("div").is(".cart__item")){
+				$(".cart__total").hide();
+				$("a.check-out").hide();
+				$(".cart-head").hide();
+				$(".cart__empty").show();
+			}
+		});
+
+		/**
+		 * function calculate total price
+		 * in cart
+		 */
+		function total_price(){
+			var total = 0;
+			$(".cart__item .price span").each(function(){
+				total += Number($(this).html());
+			});
+			return total;
+		}
 
 
 

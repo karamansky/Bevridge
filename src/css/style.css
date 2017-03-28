@@ -1460,6 +1460,9 @@ li {
         font-family: "BebasNeue-Bold", sans-serif;
         font-size: 25px;
         line-height: 35px; }
+  #store .cart__actions {
+    overflow: hidden;
+    padding-top: 15px; }
   #store .cart__action {
     display: block;
     width: -webkit-calc(50% - 7px);
@@ -1480,7 +1483,7 @@ li {
   #store .cart__total {
     overflow: hidden;
     padding: 24px 0 0 25px;
-    margin-bottom: 31px; }
+    margin-bottom: 16px; }
     #store .cart__total .cart__total-heading {
       float: left; }
       #store .cart__total .cart__total-heading p {
@@ -1516,7 +1519,17 @@ li {
     background: #fff;
     position: absolute;
     right: 0;
-    top: 80px; }
+    top: 80px;
+    min-width: 500px; }
+  .cart .cart__empty {
+    padding: 30px;
+    display: none; }
+    .cart .cart__empty p {
+      font-family: "BebasNeue-Bold", sans-serif;
+      font-size: 45px;
+      line-height: 55px;
+      text-align: center;
+      color: #d10f26; }
   .cart .cart__table {
     border-bottom: 1px solid #d10f26; }
     .cart .cart__table .cart__item {

@@ -1356,7 +1356,8 @@ li {
   background-position: top center, bottom center;
   background-repeat: no-repeat, no-repeat;
   background-color: #D1242A;
-  background-size: 100%; }
+  background-size: 100%;
+  position: relative; }
   #store h2 {
     text-align: center;
     color: #fff;
@@ -1429,7 +1430,7 @@ li {
     top: -102px;
     right: 0;
     width: 135px;
-    cursor: pointer; }
+    z-index: 3; }
     #store .cart-preview .cart-preview__icon {
       width: 50px;
       float: left; }
@@ -1441,7 +1442,8 @@ li {
       width: 65px;
       position: relative;
       text-align: center;
-      padding-right: 6px; }
+      padding-right: 6px;
+      cursor: pointer; }
       #store .cart-preview .cart-preview__info span {
         margin-top: -35px;
         display: block;
@@ -1458,6 +1460,177 @@ li {
         font-family: "BebasNeue-Bold", sans-serif;
         font-size: 25px;
         line-height: 35px; }
+  #store .cart__actions {
+    overflow: hidden;
+    padding-top: 15px; }
+  #store .cart__action {
+    display: block;
+    width: -webkit-calc(50% - 7px);
+    width: calc(50% - 7px);
+    font-family: "BebasNeue-Bold", sans-serif;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    padding: 29px 0 22px 0; }
+    #store .cart__action:hover {
+      background: #31508F; }
+    #store .cart__action--red {
+      float: left;
+      background: #d10f26; }
+    #store .cart__action--black {
+      float: right;
+      background: #000000; }
+  #store .cart__total {
+    overflow: hidden;
+    padding: 24px 0 0 25px;
+    margin-bottom: 16px; }
+    #store .cart__total .cart__total-heading {
+      float: left; }
+      #store .cart__total .cart__total-heading p {
+        font-family: "BebasNeue-Bold", sans-serif;
+        font-size: 25px;
+        color: #d10f26; }
+        #store .cart__total .cart__total-heading p span {
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          color: #000000; }
+    #store .cart__total .cart__total-price {
+      float: right;
+      margin-top: -2px;
+      padding: 0 66px 0 0; }
+      #store .cart__total .cart__total-price p {
+        float: right;
+        font-size: 25px;
+        color: #d10f26;
+        font-family: Arial, sans-serif;
+        font-weight: bold; }
+
+.cart {
+  margin-top: -18px;
+  background: rgba(208, 45, 42, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1; }
+  .cart .cart-wrapper {
+    position: relative; }
+  .cart .cart__body {
+    padding: 25px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    min-width: 500px; }
+  .cart .cart__empty {
+    padding: 30px;
+    display: none; }
+    .cart .cart__empty p {
+      font-family: "BebasNeue-Bold", sans-serif;
+      font-size: 45px;
+      line-height: 55px;
+      text-align: center;
+      color: #d10f26; }
+  .cart .cart__table {
+    border-bottom: 1px solid #d10f26; }
+    .cart .cart__table .cart__item {
+      margin-bottom: 12px; }
+    .cart .cart__table .table {
+      display: table;
+      width: 100%; }
+    .cart .cart__table .tr {
+      display: table-row; }
+      .cart .cart__table .tr .th {
+        display: table-cell;
+        font-family: "Archer-Bold", sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #d10f26;
+        padding-bottom: 24px; }
+        .cart .cart__table .tr .th:first-child {
+          min-width: 105px;
+          max-width: 105px; }
+        .cart .cart__table .tr .th:nth-child(2) {
+          max-width: 264px;
+          min-width: 264px; }
+        .cart .cart__table .tr .th:nth-child(3) {
+          width: 173px; }
+        .cart .cart__table .tr .th:last-child {
+          padding-right: 50px; }
+      .cart .cart__table .tr .td {
+        padding: 10px 0;
+        display: table-cell;
+        min-width: 1%;
+        vertical-align: middle;
+        background: #f3f3f3;
+        position: relative; }
+        .cart .cart__table .tr .td:first-child {
+          min-width: 105px; }
+        .cart .cart__table .tr .td:nth-child(2) {
+          min-width: 264px; }
+        .cart .cart__table .tr .td:last-child {
+          padding-right: 65px; }
+  .cart .delete {
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 42px;
+    height: 42px;
+    background: url("../images/icons/close.png") center no-repeat; }
+  .cart .td .img-box {
+    text-align: center;
+    max-width: 80px; }
+    .cart .td .img-box img {
+      max-height: 105px; }
+  .cart .qty-wrap {
+    padding-right: 106px; }
+    .cart .qty-wrap select {
+      display: inline-block;
+      float: left;
+      width: 69px;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      line-height: 33px;
+      padding: 0 0 0 46px;
+      text-align: center;
+      border: 1px solid #000000;
+      background: #fff url("../images/icons/select_count_icon.png") top left no-repeat;
+      -webkit-user-select: none;
+      -moz-user-select: -moz-none;
+      -ms-user-select: none;
+      user-select: none;
+      /* hide select triangle */
+      -webkit-appearance: none;
+      -moz-appearance: radio-container;
+      appearance: none; }
+      .cart .qty-wrap select option {
+        width: 69px;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        line-height: 33px;
+        padding: 3px 20px 3px 13px; }
+  .cart .info-block h3 {
+    font-family: "BebasNeue-Bold", sans-serif;
+    font-size: 25px;
+    padding-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 255px; }
+  .cart .info-block p {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 255px; }
+  .cart .td .price {
+    font-size: 25px;
+    color: #d10f26;
+    font-family: Arial, sans-serif;
+    font-weight: bold; }
 
 .store .label {
   width: 152px;

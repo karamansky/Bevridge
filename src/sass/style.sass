@@ -1503,6 +1503,10 @@
 				font-size: 25px
 				line-height: 35px
 
+	.cart__actions
+		overflow: hidden
+		padding-top: 15px
+
 	.cart__action
 		display: block
 		width: calc(50% - 7px)
@@ -1523,7 +1527,7 @@
 	.cart__total
 		overflow: hidden
 		padding: 24px 0 0 25px
-		margin-bottom: 31px
+		margin-bottom: 16px
 		
 		.cart__total-heading
 			float: left
@@ -1547,6 +1551,8 @@
 				font-family: Arial, sans-serif
 				font-weight: bold
 
+
+
 .cart
 	margin-top: -18px
 	background: rgba(208, 45, 42, 0.8)
@@ -1564,7 +1570,18 @@
 		position: absolute
 		right: 0
 		top: 80px
+		min-width: 500px
 
+	.cart__empty
+		padding: 30px
+		display: none
+		p
+			font-family: $bebas-bold
+			font-size: 45px
+			line-height: 55px
+			text-align: center
+			color: $red
+			
 	.cart__table
 		border-bottom: 1px solid $red
 
