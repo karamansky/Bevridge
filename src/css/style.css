@@ -1460,6 +1460,47 @@ li {
         font-family: "BebasNeue-Bold", sans-serif;
         font-size: 25px;
         line-height: 35px; }
+  #store .cart__action {
+    display: block;
+    width: -webkit-calc(50% - 7px);
+    width: calc(50% - 7px);
+    font-family: "BebasNeue-Bold", sans-serif;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    padding: 29px 0 22px 0; }
+    #store .cart__action:hover {
+      background: #31508F; }
+    #store .cart__action--red {
+      float: left;
+      background: #d10f26; }
+    #store .cart__action--black {
+      float: right;
+      background: #000000; }
+  #store .cart__total {
+    overflow: hidden;
+    padding: 24px 0 0 25px;
+    margin-bottom: 31px; }
+    #store .cart__total .cart__total-heading {
+      float: left; }
+      #store .cart__total .cart__total-heading p {
+        font-family: "BebasNeue-Bold", sans-serif;
+        font-size: 25px;
+        color: #d10f26; }
+        #store .cart__total .cart__total-heading p span {
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          color: #000000; }
+    #store .cart__total .cart__total-price {
+      float: right;
+      margin-top: -2px;
+      padding: 0 66px 0 0; }
+      #store .cart__total .cart__total-price p {
+        float: right;
+        font-size: 25px;
+        color: #d10f26;
+        font-family: Arial, sans-serif;
+        font-weight: bold; }
 
 .cart {
   margin-top: -18px;
@@ -1471,45 +1512,107 @@ li {
   .cart .cart-wrapper {
     position: relative; }
   .cart .cart__body {
-    width: 650px;
     padding: 25px;
-    height: 460px;
     background: #fff;
     position: absolute;
     right: 0;
     top: 80px; }
-  .cart .cart__table .table {
-    display: table; }
-    .cart .cart__table .table .tr {
+  .cart .cart__table {
+    border-bottom: 1px solid #d10f26; }
+    .cart .cart__table .cart__item {
+      margin-bottom: 12px; }
+    .cart .cart__table .table {
+      display: table;
+      width: 100%; }
+    .cart .cart__table .tr {
       display: table-row; }
-      .cart .cart__table .table .tr .th {
+      .cart .cart__table .tr .th {
         display: table-cell;
         font-family: "Archer-Bold", sans-serif;
         font-size: 20px;
         text-transform: uppercase;
         color: #d10f26;
-        padding-bottom: 20px; }
-      .cart .cart__table .table .tr .td {
-        min-width: 1%;
+        padding-bottom: 24px; }
+        .cart .cart__table .tr .th:first-child {
+          min-width: 105px;
+          max-width: 105px; }
+        .cart .cart__table .tr .th:nth-child(2) {
+          max-width: 264px;
+          min-width: 264px; }
+        .cart .cart__table .tr .th:nth-child(3) {
+          width: 173px; }
+        .cart .cart__table .tr .th:last-child {
+          padding-right: 50px; }
+      .cart .cart__table .tr .td {
+        padding: 10px 0;
         display: table-cell;
+        min-width: 1%;
+        vertical-align: middle;
         background: #f3f3f3;
-        width: 100%;
-        vertical-align: middle; }
+        position: relative; }
+        .cart .cart__table .tr .td:first-child {
+          min-width: 105px; }
+        .cart .cart__table .tr .td:nth-child(2) {
+          min-width: 264px; }
+        .cart .cart__table .tr .td:last-child {
+          padding-right: 65px; }
+  .cart .delete {
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 42px;
+    height: 42px;
+    background: url("../images/icons/close.png") center no-repeat; }
   .cart .td .img-box {
     text-align: center;
-    max-width: 70px;
-    max-height: 105px; }
+    max-width: 80px; }
+    .cart .td .img-box img {
+      max-height: 105px; }
+  .cart .qty-wrap {
+    padding-right: 106px; }
+    .cart .qty-wrap select {
+      display: inline-block;
+      float: left;
+      width: 69px;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      line-height: 33px;
+      padding: 0 0 0 46px;
+      text-align: center;
+      border: 1px solid #000000;
+      background: #fff url("../images/icons/select_count_icon.png") top left no-repeat;
+      -webkit-user-select: none;
+      -moz-user-select: -moz-none;
+      -ms-user-select: none;
+      user-select: none;
+      /* hide select triangle */
+      -webkit-appearance: none;
+      -moz-appearance: radio-container;
+      appearance: none; }
+      .cart .qty-wrap select option {
+        width: 69px;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        line-height: 33px;
+        padding: 3px 20px 3px 13px; }
   .cart .info-block h3 {
     font-family: "BebasNeue-Bold", sans-serif;
     font-size: 25px;
+    padding-top: 10px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    max-width: 255px; }
   .cart .info-block p {
     font-family: Arial, sans-serif;
     font-size: 15px;
     text-transform: uppercase;
-    padding-bottom: 8px; }
+    padding-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 255px; }
   .cart .td .price {
     font-size: 25px;
     color: #d10f26;

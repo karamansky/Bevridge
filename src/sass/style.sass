@@ -1503,6 +1503,50 @@
 				font-size: 25px
 				line-height: 35px
 
+	.cart__action
+		display: block
+		width: calc(50% - 7px)
+		font-family: $bebas-bold
+		font-size: 25px
+		color: #fff
+		text-align: center
+		padding: 29px 0 22px 0
+		&:hover
+			background: $blue
+		&--red
+			float: left
+			background: $red
+		&--black
+			float: right
+			background: $black
+
+	.cart__total
+		overflow: hidden
+		padding: 24px 0 0 25px
+		margin-bottom: 31px
+		
+		.cart__total-heading
+			float: left
+			p
+				font-family: $bebas-bold
+				font-size: 25px
+				color: $red
+				span
+					font-family: Arial, sans-serif
+					font-size: 14px
+					color: $black
+
+		.cart__total-price
+			float: right
+			margin-top: -2px
+			padding: 0 66px 0 0
+			p
+				float: right
+				font-size: 25px
+				color: $red
+				font-family: Arial, sans-serif
+				font-weight: bold
+
 .cart
 	margin-top: -18px
 	background: rgba(208, 45, 42, 0.8)
@@ -1515,51 +1559,119 @@
 		position: relative
 
 	.cart__body
-		width: 650px
 		padding: 25px
-		height: 460px
 		background: #fff
 		position: absolute
 		right: 0
 		top: 80px
 
 	.cart__table
+		border-bottom: 1px solid $red
+
+		.cart__item
+			margin-bottom: 12px
+
 		.table
 			display: table
-			.tr
-				display: table-row
-				.th
-					display: table-cell
-					font-family: $archer-bold
-					font-size: 20px
-					text-transform: uppercase
-					color: $red
-					padding-bottom: 20px
-				.td
-					//margin-bottom: 15px
-					min-width: 1%
-					display: table-cell
-					background: #f3f3f3
-					width: 100%
-					vertical-align: middle
+			width: 100%
+
+		.tr
+			display: table-row
+
+			.th
+				display: table-cell
+				font-family: $archer-bold
+				font-size: 20px
+				text-transform: uppercase
+				color: $red
+				padding-bottom: 24px
+				&:first-child
+					min-width: 105px
+					max-width: 105px
+				&:nth-child(2)
+					max-width: 264px
+					min-width: 264px
+				&:nth-child(3)
+					width: 173px
+				&:last-child
+					padding-right: 50px
+
+			.td
+				padding: 10px 0
+				display: table-cell
+				min-width: 1%
+				vertical-align: middle
+				background: #f3f3f3
+				position: relative
+				&:first-child
+					min-width: 105px
+				&:nth-child(2)
+					min-width: 264px
+				&:last-child
+					padding-right: 65px
+
+	.delete
+		display: block
+		position: absolute
+		right: -10px
+		top: -10px
+		width: 42px
+		height: 42px
+		background: url("../images/icons/close.png") center no-repeat
 
 	.td .img-box
 		text-align: center
-		max-width: 70px
-		max-height: 105px
+		max-width: 80px
+		img
+			max-height: 105px
+
+	.qty-wrap
+		padding-right: 106px
+		select
+			display: inline-block
+			float: left
+			width: 69px
+			font-family: Arial, sans-serif
+			font-size: 18px
+			line-height: 33px
+			padding: 0 0 0 46px
+			text-align: center
+			border: 1px solid $black
+			background: #fff url("../images/icons/select_count_icon.png") top left no-repeat
+			-webkit-user-select: none
+			-moz-user-select: -moz-none
+			-ms-user-select: none
+			user-select: none
+			/* hide select triangle */
+			-webkit-appearance: none
+			-moz-appearance: radio-container
+			appearance: none
+
+			option
+				width: 69px
+				font-family: Arial, sans-serif
+				font-size: 18px
+				line-height: 33px
+				padding: 3px 20px 3px 13px
 
 	.info-block h3
 		font-family: $bebas-bold
 		font-size: 25px
+		padding-top: 10px
 		white-space: nowrap
 		overflow: hidden
 		text-overflow: ellipsis
+		max-width: 255px
 
 	.info-block p
 		font-family: Arial, sans-serif
 		font-size: 15px
 		text-transform: uppercase
 		padding-bottom: 8px
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		max-width: 255px
 
 	.td .price
 		font-size: 25px
