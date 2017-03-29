@@ -478,6 +478,8 @@ li {
       height: 6px;
       background: #082662;
       top: 58px; }
+  #ourmarket .owl-pagination,
+  #ourmarket .owl-buttons,
   #ourmarket .owl-pagination {
     display: none; }
   #ourmarket .slider {
@@ -676,6 +678,9 @@ li {
 
 /*end footer*/
 /************************* BRANDS *********************/
+.header.our_brands {
+  padding-bottom: 166px; }
+
 .header h2 {
   padding-top: 177px;
   text-align: center;
@@ -1795,6 +1800,76 @@ li {
       .special-offer .store-block .actions-block select {
         margin-right: 15px; }
 
+/***********************************CONTACT-US*****************************/
+#contacts {
+  padding-top: 40px;
+  padding-bottom: 125px; }
+  #contacts .content {
+    overflow: hidden; }
+    #contacts .content p {
+      color: #fff;
+      font-family: "Archer-Bold", sans-serif;
+      font-size: 23px;
+      line-height: 50px; }
+      #contacts .content p b {
+        color: #000000;
+        font-weight: normal;
+        font-family: "Archer-Bold", sans-serif; }
+  #contacts .left-box {
+    float: left;
+    width: 50%; }
+  #contacts .right-box {
+    padding-left: 117px;
+    float: right;
+    width: -webkit-calc(50% - 117px);
+    width: calc(50% - 117px); }
+
+#contacts-form {
+  margin-top: -100px;
+  padding: 106px 0 87px 0;
+  background-image: url("../images/contacts-form-bg.jpg");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%; }
+  #contacts-form .form-wrapper {
+    max-width: 442px;
+    margin: 0 auto; }
+  #contacts-form form {
+    text-align: center; }
+  #contacts-form input, #contacts-form textarea {
+    color: #000000;
+    border: 2px solid #a6a6a6;
+    font-family: "Archer-Bold", sans-serif;
+    font-size: 23px;
+    height: 53px;
+    padding: 0;
+    margin-bottom: 23px;
+    text-align: center;
+    width: -webkit-calc(100% - 4px);
+    width: calc(100% - 4px); }
+    #contacts-form input::-webkit-input-placeholder, #contacts-form textarea::-webkit-input-placeholder {
+      color: #000000; }
+    #contacts-form input::-moz-placeholder, #contacts-form textarea::-moz-placeholder {
+      color: #000000; }
+    #contacts-form input:-moz-placeholder, #contacts-form textarea:-moz-placeholder {
+      color: #000000; }
+    #contacts-form input:-ms-input-placeholder, #contacts-form textarea:-ms-input-placeholder {
+      color: #000000; }
+  #contacts-form textarea {
+    height: 212px;
+    padding-top: 13px; }
+  #contacts-form input[type=submit] {
+    border: none;
+    background: #ff7f01;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 216px;
+    height: auto;
+    margin-top: 20px;
+    padding: 19px 0; }
+
 @media screen and (max-width: 1280px) {
   .slider__item .action-button img {
     right: -13px; }
@@ -1853,7 +1928,11 @@ li {
     width: calc(33% - 50px); }
   .special-offer .store-block img {
     width: 40%;
-    margin: 0 0 0 50px; } }
+    margin: 0 0 0 50px; }
+  #contacts .left-box {
+    padding: 0 15px;
+    width: -webkit-calc(50% - 30px);
+    width: calc(50% - 30px); } }
 
 @media screen and (max-width: 1024px) {
   .header__menu .menu li {
@@ -1996,7 +2075,14 @@ li {
     float: none; }
   .special-offer .store-block img {
     width: 280px;
-    margin-top: -30px; } }
+    margin-top: -30px; }
+  #contacts .left-box,
+  #contacts .right-box {
+    padding: 0 15px;
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+    float: none;
+    text-align: center; } }
 
 @media screen and (max-width: 768px) {
   .header {
@@ -2123,7 +2209,10 @@ li {
     width: -webkit-calc(100% - 50px);
     width: calc(100% - 50px);
     min-width: -webkit-calc(100% - 50px);
-    min-width: calc(100% - 50px); } }
+    min-width: calc(100% - 50px); }
+  #contacts .content p {
+    font-size: 18px;
+    line-height: 35px; } }
 
 @media screen and (max-width: 700px) {
   .cart {
@@ -2299,7 +2388,10 @@ li {
     right: 10px;
     top: -260px; }
   #store .cart__total {
-    padding-left: 0; } }
+    padding-left: 0; }
+  #contacts-form input, #contacts-form textarea {
+    width: -webkit-calc(100% - 25px);
+    width: calc(100% - 25px); } }
 
 @media screen and (max-width: 350px) {
   .phone-navigation {

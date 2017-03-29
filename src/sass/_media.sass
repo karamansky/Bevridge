@@ -80,6 +80,10 @@
 		width: 40%
 		margin: 0 0 0 50px
 
+	#contacts .left-box
+		padding: 0 15px
+		width: calc(50% - 30px)
+
 
 
 @media screen and (max-width: 1024px)
@@ -263,6 +267,12 @@
 		width: 280px
 		margin-top: -30px
 
+	#contacts .left-box,
+	#contacts .right-box
+		padding: 0 15px
+		width: calc(100% - 30px)
+		float: none
+		text-align: center
 
 
 @media screen and (max-width: 768px)
@@ -412,6 +422,10 @@
 		position: relative
 		width: calc(100% - 50px)
 		min-width: calc(100% - 50px)
+
+	#contacts .content p
+		font-size: 18px
+		line-height: 35px
 
 @media screen and (max-width: 700px)
 	.cart
@@ -626,7 +640,8 @@
 	#store .cart__total
 		padding-left: 0
 
-
+	#contacts-form input, #contacts-form textarea
+		width: calc(100% - 25px)
 
 @media screen and (max-width: 350px) //iPhone5
 	.phone-navigation
