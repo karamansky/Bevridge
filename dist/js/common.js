@@ -161,6 +161,23 @@ $(function(){
 		}
 
 
+		/**
+		 * careers learnmore
+		 */
+		$('.text-block').readmore({
+			maxHeight: 125,
+			speed: 350,
+			moreLink: '<a href="#" class="learnmore skew">LEARN MORE</a>',
+			lessLink: '<a href="#" class="applynow skew">APPLY NOW</a>'
+		});
+		$(document).on("click",".learnmore",function(){
+			$(this).parent().find("span").hide(300);
+		});
+		$(document).on("click",".applynow",function(){
+			$(this).parent().find("span").show(300);
+		});
+
+
 
 
 //==========EoF==============
