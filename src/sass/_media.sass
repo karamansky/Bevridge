@@ -84,6 +84,14 @@
 		padding: 0 15px
 		width: calc(50% - 30px)
 
+	.careers__item
+		padding-left: 15px
+
+	#careers .caption__img .logo
+		top: 60px
+		width: 250px
+		height: 215px
+
 
 
 @media screen and (max-width: 1024px)
@@ -119,6 +127,9 @@
 		p
 			padding-right: 20px
 			padding-left: 20px
+
+	#careers .caption__text p
+		padding: 25px 60px 0 60px
 
 @media screen and (max-width: 992px)
 	#nav-icon1
@@ -274,6 +285,8 @@
 		float: none
 		text-align: center
 
+	#careers .caption__text p
+		font-size: 26px
 
 @media screen and (max-width: 768px)
 	.header
@@ -427,6 +440,31 @@
 		font-size: 18px
 		line-height: 35px
 
+	#careers .header__caption
+		height: auto
+		overflow: hidden
+	
+	#careers .caption__text
+		width: 100%
+		float: none
+
+	#careers .caption__text p
+		max-width: 100%
+		font-size: 35px
+		padding-top: 60px
+
+	#careers .caption__img
+		float: none
+		width: 100%
+
+	.careers__item .learnmore, .careers__item .applynow
+		right: 15px
+		bottom: 25px
+
+	.careers__item .text-block p
+		width: 60%
+
+
 @media screen and (max-width: 700px)
 	.cart
 		margin-top: -98px
@@ -547,6 +585,15 @@
 		margin: 0 auto 30px auto
 		z-index: 0
 
+	.careers__item
+		padding-bottom: 110px
+
+	.careers__item .text-block
+		width: calc(100% - 15px)
+		p
+			width: 98%
+
+
 @media screen and (max-width: 450px) //iPhone6
 	.phone-hidden
 		display: none
@@ -642,6 +689,12 @@
 
 	#contacts-form input, #contacts-form textarea
 		width: calc(100% - 25px)
+
+	.careers__item .text-block
+		height: 250px!important
+
+	.careers__item .text-block p span
+		display: none
 
 @media screen and (max-width: 350px) //iPhone5
 	.phone-navigation

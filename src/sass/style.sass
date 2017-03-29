@@ -644,6 +644,9 @@
 		top: 0
 		a
 			margin-right: 10px
+			img
+				width: 26px
+				height: 25px
 			&:last-child
 				margin-right: 0
 
@@ -1965,14 +1968,127 @@
 		height: auto
 		margin-top: 20px
 		padding: 19px 0
-//
-//
-//
-//
-//
-//
-//
-//
+
+
+/*********************************CAREERS********************************/
+.header.careers
+	padding-bottom: 166px
+
+
+#careers
+	padding: 200px 0 310px 0
+	background-image: url("../images/csr_bg_top.jpg"), url("../images/news_bg_bottom.jpg")
+	background-position: top center, bottom center
+	background-repeat: no-repeat, no-repeat
+	background-color: #D1242A
+	background-size: 100%
+	h2
+		font-size: 35px
+		text-align: center
+		color: #fff
+		position: relative
+		margin-bottom: 73px
+		margin-top: -23px
+		&:after
+			position: absolute
+			left: 50%
+			margin-left: -108px
+			content: ""
+			display: block
+			width: 226px
+			height: 6px
+			background: $black
+			bottom: -25px
+
+	.header__caption
+		height: 250px
+
+	.caption__img
+		position: relative
+		height: 100%
+		width: 50%
+		float: left
+		img
+			height: 100%
+			width: 100%
+		.logo
+			position: absolute
+			right: 20px
+			top: 27px
+			width: 318px
+			height: 277px
+
+	.caption__text
+		overflow: hidden
+		height: 250px
+		width: 50%
+		color: #fff
+		float: left
+		background: $black
+
+		p
+			padding: 47px 90px 0 60px
+			letter-spacing: -1px
+			font-family: $archer-semibold
+			font-size: 33px
+			line-height: 39px
+			max-width: 400px
+
+.careers
+	padding-top: 79px
+
+.careers__item
+	padding: 45px 0
+	border-top: 1px solid $yellow
+	overflow: hidden
+	position: relative
+
+	.text-block
+		float: left
+		width: 100%
+		h3
+			text-transform: none
+			font-size: 36px
+			padding-bottom: 18px
+
+		p
+			width: 50%
+			font-family: $archer-bold
+			color: #fff
+			font-size: 22px
+			line-height: 25px
+			&:nth-child(2n-1)
+				padding-bottom: 23px
+			span
+				color: $black
+
+	//.button-block
+	//	float: right
+	//	//overflow: hidden
+	//	width: 50%
+	//	position: relative
+
+	.learnmore,
+	.applynow
+		display: block
+		border: none
+		background: $yellow
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		width: 216px
+		height: auto
+		margin-top: 20px
+		padding: 25px 0
+		font-family: $archer-bold
+		font-size: 23px
+		position: absolute
+		right: 144px
+		bottom: 74px
+		
+	.applynow
+		background: $black
+
 //
 //
 @import "media"
