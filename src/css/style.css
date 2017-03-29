@@ -682,7 +682,7 @@ li {
 /*end footer*/
 /************************* BRANDS *********************/
 .header.our_brands {
-  padding-bottom: 166px; }
+  padding-bottom: 196px; }
 
 .header h2 {
   padding-top: 177px;
@@ -729,7 +729,7 @@ li {
     max-width: 396px; }
 
 #brands {
-  margin-top: -60px;
+  margin-top: -90px;
   position: relative;
   background-image: url("../images/brands_bg_top.jpg"), url("../images/brands_bg_bottom.jpg");
   background-position: top center, bottom center;
@@ -1056,7 +1056,7 @@ li {
 
 /********************************** ABOUT US ***************************/
 .aboutus_page .header {
-  padding-bottom: 70px;
+  padding-bottom: 100px;
   background: #CF212A url("../images/about_us_bg.jpg") top center no-repeat;
   background-size: cover; }
 
@@ -1105,7 +1105,7 @@ li {
 #whatwedo {
   background: #3B3B39 url("../images/what_we_do_bg.jpg") top center no-repeat;
   background-size: 100%;
-  margin-top: -60px;
+  margin-top: -90px;
   padding-bottom: 70px; }
   #whatwedo h2 {
     padding-top: 120px;
@@ -1175,7 +1175,7 @@ li {
 
 /*********************************** CAPABILITIES *****************************/
 .capabilities_page .header {
-  padding-bottom: 70px;
+  padding-bottom: 100px;
   background: #D1242A url("../images/capabilities_header_bg.jpg") top center no-repeat;
   background-size: 100%; }
 
@@ -1221,7 +1221,7 @@ li {
 #whatweprovide {
   background: #3B3B39 url("../images/what_we_do_bg.jpg") top center no-repeat;
   background-size: 100%;
-  margin-top: -60px;
+  margin-top: -90px;
   padding-bottom: 80px; }
   #whatweprovide h2 {
     padding-top: 120px;
@@ -2552,3 +2552,82 @@ li {
     font-size: 16px; }
   #store .cart__action {
     font-size: 21px; } }
+
+/* retina media */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .header__logo {
+    background: url("../images/logo@2x.png") center no-repeat; }
+  .image-cap:after {
+    background: url("../images/icons/ourhistory_line@2x.png") center no-repeat; }
+  .history__content .arrow {
+    background: url("../images/icons/our_history_arrow_down@2x.png") top center no-repeat; }
+  #ourmarket .slider .left-btn {
+    background: url("../images/icons/arrow_left@2x.png") no-repeat; }
+  #ourmarket .slider .right-btn {
+    background: url("../images/icons/arrow_right@2x.png") no-repeat; }
+  #beer-popup .owl-prev {
+    background: url("../images/icons/popup_carousel_arrow_left@2x.png") center no-repeat; }
+  #beer-popup .owl-next {
+    background: url("../images/icons/popup_carousel_arrow_right@2x.png") center no-repeat; }
+  #newsandmedia .video-play {
+    background: url("../images/icons/play_video@2x.png") center no-repeat; }
+  #store .brands-select select {
+    background: #fff url("../images/icons/select-icon@2x.jpg") top right no-repeat; }
+  .cart .delete {
+    background: url("../images/icons/close@2x.png") center no-repeat; }
+  .cart .qty-wrap select {
+    background: #fff url("../images/icons/select_count_icon@2x.png") top left no-repeat; }
+  .store .actions-block select {
+    background: url("../images/icons/select_count_icon@2x.png") top left no-repeat; } }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  .header__logo {
+    background: url("../images/logo@2x.png") center no-repeat; }
+  .image-cap:after {
+    background: url("../images/icons/ourhistory_line@2x.png") center no-repeat; }
+  .history__content .arrow {
+    background: url("../images/icons/our_history_arrow_down@2x.png") top center no-repeat; }
+  #ourmarket .slider .left-btn {
+    background: url("../images/icons/arrow_left@2x.png") no-repeat; }
+  #ourmarket .slider .right-btn {
+    background: url("../images/icons/arrow_right@2x.png") no-repeat; }
+  #beer-popup .owl-prev {
+    background: url("../images/icons/popup_carousel_arrow_left@2x.png") center no-repeat; }
+  #beer-popup .owl-next {
+    background: url("../images/icons/popup_carousel_arrow_right@2x.png") center no-repeat; }
+  #newsandmedia .video-play {
+    background: url("../images/icons/play_video@2x.png") center no-repeat; }
+  #store .brands-select select {
+    background: #fff url("../images/icons/select-icon@2x.jpg") top right no-repeat; }
+  .cart .delete {
+    background: url("../images/icons/close@2x.png") center no-repeat; }
+  .cart .qty-wrap select {
+    background: #fff url("../images/icons/select_count_icon@2x.png") top left no-repeat; }
+  .store .actions-block select {
+    background: url("../images/icons/select_count_icon@2x.png") top left no-repeat; } }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  .header__logo {
+    background: url("../images/logo@2x.png") center no-repeat; }
+  .image-cap:after {
+    background: url("../images/icons/ourhistory_line@2x.png") center no-repeat; }
+  .history__content .arrow {
+    background: url("../images/icons/our_history_arrow_down@2x.png") top center no-repeat; }
+  #ourmarket .slider .left-btn {
+    background: url("../images/icons/arrow_left@2x.png") no-repeat; }
+  #ourmarket .slider .right-btn {
+    background: url("../images/icons/arrow_right@2x.png") no-repeat; }
+  #beer-popup .owl-prev {
+    background: url("../images/icons/popup_carousel_arrow_left@2x.png") center no-repeat; }
+  #beer-popup .owl-next {
+    background: url("../images/icons/popup_carousel_arrow_right@2x.png") center no-repeat; }
+  #newsandmedia .video-play {
+    background: url("../images/icons/play_video@2x.png") center no-repeat; }
+  #store .brands-select select {
+    background: #fff url("../images/icons/select-icon@2x.jpg") top right no-repeat; }
+  .cart .delete {
+    background: url("../images/icons/close@2x.png") center no-repeat; }
+  .cart .qty-wrap select {
+    background: #fff url("../images/icons/select_count_icon@2x.png") top left no-repeat; }
+  .store .actions-block select {
+    background: url("../images/icons/select_count_icon@2x.png") top left no-repeat; } }

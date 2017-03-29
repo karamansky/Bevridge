@@ -55,7 +55,6 @@ $(function(){
 			var target = $(this).data("target");
 
 			if(target == "all"){
-				console.log("123");
 				$("#newsandmedia .news__item").show();
 			}else{
 				$("#newsandmedia .news .news__item").hide();
