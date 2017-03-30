@@ -2567,7 +2567,8 @@ li {
 /* retina media */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   .header__nav .header__logo {
-    background: url("../images/logo@2x.png") center no-repeat; }
+    background: url("../images/logo@2x.png") center no-repeat;
+    background-size: cover; }
   .image-cap:after {
     background: url("../images/icons/ourhistory_line@2x.png") center no-repeat; }
   .history__content .arrow {
@@ -2595,7 +2596,8 @@ li {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .header__nav .header__logo {
-    background: url("../images/logo@2x.png") center no-repeat; }
+    background: url("../images/logo@2x.png") center no-repeat;
+    background-size: cover; }
   .image-cap:after {
     background: url("../images/icons/ourhistory_line@2x.png") center no-repeat; }
   .history__content .arrow {
@@ -2623,7 +2625,8 @@ li {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
   .header__nav .header__logo {
-    background: url("../images/logo@2x.png") center no-repeat; }
+    background: url("../images/logo@2x.png") center no-repeat;
+    background-size: cover; }
   .image-cap:after {
     background: url("../images/icons/ourhistory_line@2x.png") center no-repeat; }
   .history__content .arrow {
