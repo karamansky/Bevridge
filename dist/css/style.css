@@ -1859,6 +1859,14 @@ li {
       color: #000000; }
     #contacts-form input:-ms-input-placeholder, #contacts-form textarea:-ms-input-placeholder {
       color: #000000; }
+    #contacts-form input:focus::-webkit-input-placeholder, #contacts-form textarea:focus::-webkit-input-placeholder {
+      color: #a6a6a6; }
+    #contacts-form input:focus::-moz-placeholder, #contacts-form textarea:focus::-moz-placeholder {
+      color: #a6a6a6; }
+    #contacts-form input:focus:-moz-placeholder, #contacts-form textarea:focus:-moz-placeholder {
+      color: #a6a6a6; }
+    #contacts-form input:focus:-ms-input-placeholder, #contacts-form textarea:focus:-ms-input-placeholder {
+      color: #a6a6a6; }
   #contacts-form textarea {
     height: 212px;
     padding-top: 13px; }
@@ -1871,7 +1879,10 @@ li {
     width: 216px;
     height: auto;
     margin-top: 20px;
-    padding: 19px 0; }
+    padding: 19px 0;
+    cursor: pointer; }
+    #contacts-form input[type=submit]:hover {
+      background: #31508F; }
 
 /*********************************CAREERS********************************/
 .header.careers {
@@ -2555,7 +2566,7 @@ li {
 
 /* retina media */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-  .header__logo {
+  .header__nav .header__logo {
     background: url("../images/logo@2x.png") center no-repeat; }
   .image-cap:after {
     background: url("../images/icons/ourhistory_line@2x.png") center no-repeat; }
@@ -2578,10 +2589,12 @@ li {
   .cart .qty-wrap select {
     background: #fff url("../images/icons/select_count_icon@2x.png") top left no-repeat; }
   .store .actions-block select {
-    background: url("../images/icons/select_count_icon@2x.png") top left no-repeat; } }
+    background: url("../images/icons/select_count_icon@2x.png") top left no-repeat; }
+  .store .actions-block a {
+    background: url("../images/icons/tocard_button@2x.png") center no-repeat; } }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
-  .header__logo {
+  .header__nav .header__logo {
     background: url("../images/logo@2x.png") center no-repeat; }
   .image-cap:after {
     background: url("../images/icons/ourhistory_line@2x.png") center no-repeat; }
@@ -2604,10 +2617,12 @@ li {
   .cart .qty-wrap select {
     background: #fff url("../images/icons/select_count_icon@2x.png") top left no-repeat; }
   .store .actions-block select {
-    background: url("../images/icons/select_count_icon@2x.png") top left no-repeat; } }
+    background: url("../images/icons/select_count_icon@2x.png") top left no-repeat; }
+  .store .actions-block a {
+    background: url("../images/icons/tocard_button@2x.png") center no-repeat; } }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
-  .header__logo {
+  .header__nav .header__logo {
     background: url("../images/logo@2x.png") center no-repeat; }
   .image-cap:after {
     background: url("../images/icons/ourhistory_line@2x.png") center no-repeat; }
@@ -2630,4 +2645,6 @@ li {
   .cart .qty-wrap select {
     background: #fff url("../images/icons/select_count_icon@2x.png") top left no-repeat; }
   .store .actions-block select {
-    background: url("../images/icons/select_count_icon@2x.png") top left no-repeat; } }
+    background: url("../images/icons/select_count_icon@2x.png") top left no-repeat; }
+  .store .actions-block a {
+    background: url("../images/icons/tocard_button@2x.png") center no-repeat; } }
