@@ -497,6 +497,7 @@ li {
       width: 28px;
       height: 46px;
       background: url("../images/icons/arrow_left.png") no-repeat;
+      background-size: 100% !important;
       cursor: pointer; }
     #ourmarket .slider .right-btn {
       position: absolute;
@@ -507,6 +508,7 @@ li {
       width: 28px;
       height: 46px;
       background: url("../images/icons/arrow_right.png") no-repeat;
+      background-size: 100% !important;
       cursor: pointer; }
   #ourmarket .slider__items {
     max-width: 1186px;
@@ -1951,22 +1953,22 @@ li {
   border-top: 1px solid #ff7f01;
   overflow: hidden;
   position: relative; }
-  .careers__item .text-block {
+  .careers__item .careers__text-block {
     float: left;
     width: 100%; }
-    .careers__item .text-block h3 {
+    .careers__item .careers__text-block h3 {
       text-transform: none;
       font-size: 36px;
       padding-bottom: 18px; }
-    .careers__item .text-block p {
+    .careers__item .careers__text-block p {
       width: 50%;
       font-family: "Archer-Bold", sans-serif;
       color: #fff;
       font-size: 22px;
       line-height: 25px; }
-      .careers__item .text-block p:nth-child(2n-1) {
+      .careers__item .careers__text-block p:nth-child(2n-1) {
         padding-bottom: 23px; }
-      .careers__item .text-block p span {
+      .careers__item .careers__text-block p span {
         color: #000000; }
   .careers__item .learnmore,
   .careers__item .applynow {
@@ -2574,8 +2576,10 @@ li {
   .history__content .arrow {
     background: url("../images/icons/our_history_arrow_down@2x.png") top center no-repeat; }
   #ourmarket .slider .left-btn {
+    background-size: 100% !important;
     background: url("../images/icons/arrow_left@2x.png") no-repeat; }
   #ourmarket .slider .right-btn {
+    background-size: 100% !important;
     background: url("../images/icons/arrow_right@2x.png") no-repeat; }
   #beer-popup .owl-prev {
     background: url("../images/icons/popup_carousel_arrow_left@2x.png") center no-repeat; }
@@ -2606,8 +2610,10 @@ li {
   .history__content .arrow {
     background: url("../images/icons/our_history_arrow_down@2x.png") top center no-repeat; }
   #ourmarket .slider .left-btn {
+    background-size: 100% !important;
     background: url("../images/icons/arrow_left@2x.png") no-repeat; }
   #ourmarket .slider .right-btn {
+    background-size: 100% !important;
     background: url("../images/icons/arrow_right@2x.png") no-repeat; }
   #beer-popup .owl-prev {
     background: url("../images/icons/popup_carousel_arrow_left@2x.png") center no-repeat; }
@@ -2638,8 +2644,10 @@ li {
   .history__content .arrow {
     background: url("../images/icons/our_history_arrow_down@2x.png") top center no-repeat; }
   #ourmarket .slider .left-btn {
+    background-size: 100% !important;
     background: url("../images/icons/arrow_left@2x.png") no-repeat; }
   #ourmarket .slider .right-btn {
+    background-size: 100% !important;
     background: url("../images/icons/arrow_right@2x.png") no-repeat; }
   #beer-popup .owl-prev {
     background: url("../images/icons/popup_carousel_arrow_left@2x.png") center no-repeat; }

@@ -497,6 +497,7 @@ li {
       width: 28px;
       height: 46px;
       background: url("../images/icons/arrow_left.png") no-repeat;
+      background-size: 100% !important;
       cursor: pointer; }
     #ourmarket .slider .right-btn {
       position: absolute;
@@ -507,6 +508,7 @@ li {
       width: 28px;
       height: 46px;
       background: url("../images/icons/arrow_right.png") no-repeat;
+      background-size: 100% !important;
       cursor: pointer; }
   #ourmarket .slider__items {
     max-width: 1186px;
@@ -1724,7 +1726,7 @@ li {
     width: 69px;
     font-family: Arial, sans-serif;
     font-size: 18px;
-    line-height: 33px;
+    line-height: 32px;
     padding: 0 0 0 46px;
     text-align: center;
     border: 1px solid #000000;
@@ -1951,22 +1953,22 @@ li {
   border-top: 1px solid #ff7f01;
   overflow: hidden;
   position: relative; }
-  .careers__item .text-block {
+  .careers__item .careers__text-block {
     float: left;
     width: 100%; }
-    .careers__item .text-block h3 {
+    .careers__item .careers__text-block h3 {
       text-transform: none;
       font-size: 36px;
       padding-bottom: 18px; }
-    .careers__item .text-block p {
+    .careers__item .careers__text-block p {
       width: 50%;
       font-family: "Archer-Bold", sans-serif;
       color: #fff;
       font-size: 22px;
       line-height: 25px; }
-      .careers__item .text-block p:nth-child(2n-1) {
+      .careers__item .careers__text-block p:nth-child(2n-1) {
         padding-bottom: 23px; }
-      .careers__item .text-block p span {
+      .careers__item .careers__text-block p span {
         color: #000000; }
   .careers__item .learnmore,
   .careers__item .applynow {
@@ -2574,8 +2576,10 @@ li {
   .history__content .arrow {
     background: url("../images/icons/our_history_arrow_down@2x.png") top center no-repeat; }
   #ourmarket .slider .left-btn {
+    background-size: 100% !important;
     background: url("../images/icons/arrow_left@2x.png") no-repeat; }
   #ourmarket .slider .right-btn {
+    background-size: 100% !important;
     background: url("../images/icons/arrow_right@2x.png") no-repeat; }
   #beer-popup .owl-prev {
     background: url("../images/icons/popup_carousel_arrow_left@2x.png") center no-repeat; }
@@ -2584,15 +2588,18 @@ li {
   #newsandmedia .video-play {
     background: url("../images/icons/play_video@2x.png") center no-repeat; }
   #store .brands-select select {
-    background: #fff url("../images/icons/select-icon@2x.jpg") top right no-repeat; }
+    background: #fff url("../images/icons/select-icon@2x.jpg") top right no-repeat;
+    background-size: 40px; }
   .cart .delete {
     background: url("../images/icons/close@2x.png") center no-repeat; }
   .cart .qty-wrap select {
     background: #fff url("../images/icons/select_count_icon@2x.png") top left no-repeat; }
   .store .actions-block select {
-    background: url("../images/icons/select_count_icon@2x.png") top left no-repeat; }
+    background: url("../images/icons/select_count_icon@2x.png") top left no-repeat;
+    background-size: 33px; }
   .store .actions-block a {
-    background: url("../images/icons/tocard_button@2x.png") center no-repeat; } }
+    background: url("../images/icons/tocard_button@2x.png") center no-repeat;
+    background-size: 110px; } }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
   .header__nav .header__logo {
@@ -2603,8 +2610,10 @@ li {
   .history__content .arrow {
     background: url("../images/icons/our_history_arrow_down@2x.png") top center no-repeat; }
   #ourmarket .slider .left-btn {
+    background-size: 100% !important;
     background: url("../images/icons/arrow_left@2x.png") no-repeat; }
   #ourmarket .slider .right-btn {
+    background-size: 100% !important;
     background: url("../images/icons/arrow_right@2x.png") no-repeat; }
   #beer-popup .owl-prev {
     background: url("../images/icons/popup_carousel_arrow_left@2x.png") center no-repeat; }
@@ -2613,15 +2622,18 @@ li {
   #newsandmedia .video-play {
     background: url("../images/icons/play_video@2x.png") center no-repeat; }
   #store .brands-select select {
-    background: #fff url("../images/icons/select-icon@2x.jpg") top right no-repeat; }
+    background: #fff url("../images/icons/select-icon@2x.jpg") top right no-repeat;
+    background-size: 40px; }
   .cart .delete {
     background: url("../images/icons/close@2x.png") center no-repeat; }
   .cart .qty-wrap select {
     background: #fff url("../images/icons/select_count_icon@2x.png") top left no-repeat; }
   .store .actions-block select {
-    background: url("../images/icons/select_count_icon@2x.png") top left no-repeat; }
+    background: url("../images/icons/select_count_icon@2x.png") top left no-repeat;
+    background-size: 33px; }
   .store .actions-block a {
-    background: url("../images/icons/tocard_button@2x.png") center no-repeat; } }
+    background: url("../images/icons/tocard_button@2x.png") center no-repeat;
+    background-size: 110px; } }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
   .header__nav .header__logo {
@@ -2632,8 +2644,10 @@ li {
   .history__content .arrow {
     background: url("../images/icons/our_history_arrow_down@2x.png") top center no-repeat; }
   #ourmarket .slider .left-btn {
+    background-size: 100% !important;
     background: url("../images/icons/arrow_left@2x.png") no-repeat; }
   #ourmarket .slider .right-btn {
+    background-size: 100% !important;
     background: url("../images/icons/arrow_right@2x.png") no-repeat; }
   #beer-popup .owl-prev {
     background: url("../images/icons/popup_carousel_arrow_left@2x.png") center no-repeat; }
@@ -2642,12 +2656,15 @@ li {
   #newsandmedia .video-play {
     background: url("../images/icons/play_video@2x.png") center no-repeat; }
   #store .brands-select select {
-    background: #fff url("../images/icons/select-icon@2x.jpg") top right no-repeat; }
+    background: #fff url("../images/icons/select-icon@2x.jpg") top right no-repeat;
+    background-size: 40px; }
   .cart .delete {
     background: url("../images/icons/close@2x.png") center no-repeat; }
   .cart .qty-wrap select {
     background: #fff url("../images/icons/select_count_icon@2x.png") top left no-repeat; }
   .store .actions-block select {
-    background: url("../images/icons/select_count_icon@2x.png") top left no-repeat; }
+    background: url("../images/icons/select_count_icon@2x.png") top left no-repeat;
+    background-size: 33px; }
   .store .actions-block a {
-    background: url("../images/icons/tocard_button@2x.png") center no-repeat; } }
+    background: url("../images/icons/tocard_button@2x.png") center no-repeat;
+    background-size: 110px; } }

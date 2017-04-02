@@ -163,7 +163,7 @@ $(function(){
 		/**
 		 * careers learnmore
 		 */
-		$('.text-block').readmore({
+		$('#careers .careers__text-block').readmore({
 			maxHeight: 125,
 			speed: 350,
 			moreLink: '<a href="#" class="learnmore skew">LEARN MORE</a>',
