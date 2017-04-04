@@ -177,6 +177,20 @@ $(function(){
 		});
 
 
+		/**
+		 * brands hover filter
+		 */
+		$("#brands .types a").hover(function(){
+			//on hover
+			var target_class = $(this).data("type");
+			$(".brands a."+target_class+" img").css("filter","grayscale(0%)");
+		},
+		function(){
+			//leave hover
+			$(".brands a img").css("filter","grayscale(100%)");
+		});
+
+
 
 
 //==========EoF==============
