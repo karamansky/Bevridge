@@ -763,7 +763,7 @@ li {
         background: #31508F; }
   #brands .brands a {
     display: inline-block;
-    margin-right: 47px;
+    margin-right: 46px;
     vertical-align: middle; }
     #brands .brands a:last-child {
       margin-right: 0; }
@@ -775,7 +775,7 @@ li {
   #brands .brands .row {
     margin-bottom: 110px; }
     #brands .brands .row:last-child {
-      margin-bottom: 0; }
+      margin-bottom: 40px; }
 
 #beer-popup {
   position: relative;
@@ -2166,9 +2166,9 @@ li {
   #brands .brands {
     overflow: hidden; }
     #brands .brands .row {
-      width: 33%;
       float: left;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 0; }
   #brands .brands a {
     display: inline-block;
     overflow: hidden;
@@ -2179,7 +2179,8 @@ li {
   #brands .types {
     text-align: center; }
     #brands .types ul {
-      display: inline-block; }
+      display: inline-block;
+      margin-bottom: -3px; }
       #brands .types ul li {
         font-size: 20px; }
         #brands .types ul li a {
